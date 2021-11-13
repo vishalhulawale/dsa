@@ -72,18 +72,16 @@ class GoodPair {
 	public static int solve(int[] A, int B){
 		int size = A.length;
 		
-		int cnt = 0;
-
 		for(int i = 0; i <= size-1; i++){
 			for(int j = i+1; j < size; j++){
 			
 				if(A[i]+A[j] == B)
-					cnt++;			
+					return 1;			
 			
 			}
 		}
 		
-		return cnt;
+		return 0;
 	}
 
 	public static void main(String[] args){

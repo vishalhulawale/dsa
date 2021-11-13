@@ -32,6 +32,9 @@ class PrevNextMultiplication{
 	public static int[] solve(int[] A) {
 		int size = A.length;
 		
+		if(size == 1)
+		    return A;
+		
 		int[] result = new int[size];
 				
 		for(int i = 1; i < size-1; i++){
