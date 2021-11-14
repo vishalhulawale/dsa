@@ -64,25 +64,34 @@ import java.util.Scanner;
 
 class RotationGame {
 
+	public static void reverse(int[] A, int si, int ei){
+	
+		int i = si, j = ei;
+		
+		while(i <= j){
+		
+			int temp =  A[i];
+			A[i] = A[j];
+			A[j] = temp;
+			
+			i++;
+			j--;
+		
+		}
+	
+	}
+
+
 	public static int[] rotate(int[] A, int B){
 		int size = A.length;
 		
 		int cnt = B % size;
-		cnt = size - cnt;
 		
-		int[] result = new int[size];
-		
-		int k = 0;
-		
-		for(int i = cnt; i < size; i++){
-			result[k++] = A[i];
-		}
-		
-		for(int i = 0; i < cnt; i++){
-			result[k++] = A[i];
-		}
+		reverse(A, 0, size-1);
+		reverse(A, 0, cnt-1);
+		reverse(A, cnt, size-1);
 				
-		return result;
+		return A;
 	}
 
 	public static void main(String[] args){
