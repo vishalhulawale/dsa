@@ -65,56 +65,57 @@ B[1] = 3 which requires 3 times left rotation
 
 2: [4, 5, 1, 2, 4]
 */
+package Arrays;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 class MultipleLeftRotation {
-	
-	public static ArrayList<ArrayList<Integer>> solve(ArrayList<Integer> A, ArrayList<Integer> B) {
-		int arrLength = A.size();
-		int rotateCnt = B.size();
 
-		ArrayList<ArrayList<Integer>> resultSet = new ArrayList<ArrayList<Integer>>();
+    public static ArrayList<ArrayList<Integer>> solve(ArrayList<Integer> A, ArrayList<Integer> B) {
+        int arrLength = A.size();
+        int rotateCnt = B.size();
 
-		for(int i = 0; i < rotateCnt; i++) {
+        ArrayList<ArrayList<Integer>> resultSet = new ArrayList<ArrayList<Integer>>();
 
-			int cnt = B.get(i) % arrLength;
+        for (int i = 0; i < rotateCnt; i++) {
 
-			ArrayList<Integer> result = new ArrayList<Integer>();
+            int cnt = B.get(i) % arrLength;
 
-			for(int j = cnt; j < arrLength; j++) {
-				result.add(A.get(j));	
-			}
+            ArrayList<Integer> result = new ArrayList<Integer>();
 
-			for(int j = 0; j < cnt; j++) {
-				result.add(A.get(j));
-			}
+            for (int j = cnt; j < arrLength; j++) {
+                result.add(A.get(j));
+            }
 
-			resultSet.add(result);
+            for (int j = 0; j < cnt; j++) {
+                result.add(A.get(j));
+            }
 
-		}
+            resultSet.add(result);
 
-		return resultSet;
-	}
+        }
 
-	public static void main(String[] args) {
-	
-		ArrayList<Integer> arr= new ArrayList(Arrays.asList(1, 2, 3, 4, 5));
-		ArrayList<Integer> cnts= new ArrayList(Arrays.asList(2, 3));
+        return resultSet;
+    }
 
-		ArrayList<ArrayList<Integer>> result = solve(arr, cnts);
+    public static void main(String[] args) {
 
-		for(ArrayList<Integer> rset : result){
-		
-			for(Integer i : rset){
-				System.out.print(i);
-			}
-			
-			System.out.print("\n");
-		
-		}
+        ArrayList<Integer> arr = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5));
+        ArrayList<Integer> cnts = new ArrayList<Integer>(Arrays.asList(2, 3));
 
-	}	
+        ArrayList<ArrayList<Integer>> result = solve(arr, cnts);
+
+        for (ArrayList<Integer> rset : result) {
+
+            for (Integer i : rset) {
+                System.out.print(i);
+            }
+
+            System.out.print("\n");
+
+        }
+
+    }
 
 }

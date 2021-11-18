@@ -28,40 +28,40 @@ Input 2:
 Output 2:
     95  (100 - 5 = 95)
 */
+package Arrays;
 
 class NthMinMaxDifference {
 
-	public static int solve(int[] A, int B) {
-		int size = A.length;
-	
-		for(int i = 0; i < size; i++){
-		
-			for(int j = i+1; j < size; j++){
-			
-				if(A[i] > A[j]){
-					int temp = A[i];
-					A[i] = A[j];
-					A[j] = temp;
-				}
-			
-			}
-		}
-		
-		for(int num :  A){
-			System.out.println(num);
-		}
-		
-		return (A[size-B] - A[B-1]);		
-	}
+    public static int solve(int[] A, int B) {
+        int size = A.length;
 
-	public static void main(String[] args){
-	
-		int[] arr = {5, 17, 100, 11};
-		
-		int result = solve(arr, 1);
-		
-		System.out.println(result);	
-					
-	}
+        for (int i = 0; i < size; i++) {
+
+            for (int j = i + 1; j < size; j++) {
+
+                if (A[i] > A[j]) {
+                    int temp = A[i];
+                    A[i] = A[j];
+                    A[j] = temp;
+                }
+
+            }
+        }
+
+        for (int num : A) {
+            System.out.println(num);
+        }
+
+        return (A[size - B] - A[B - 1]);
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr = { 5, 17, 100, 11 };
+
+        int result = solve(arr, 1);
+
+        System.out.println(result);
+
+    }
 }
-

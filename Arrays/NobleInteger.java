@@ -42,37 +42,37 @@ Explanation 2:
 
  There is no such integer exists.
 */
+package Arrays;
 
 import java.util.Arrays;
 
 class NobleInteger {
-    
-	public static int solve(int[] A) {
-	
-		Arrays.sort(A);
 
-		int size = A.length;
+    public static int solve(int[] A) {
 
-		for(int i=0;i<size;i++){
+        Arrays.sort(A);
 
-			while(i+1<size && A[i]==A[i+1])
-				i++;
-		
-			if(A[i]==size-1-i)
-				return 1;
+        int size = A.length;
 
-		}
+        for (int i = 0; i < size; i++) {
 
-	
-		return -1;
-	}
+            while (i + 1 < size && A[i] == A[i + 1])
+                i++;
 
-	public static void main(String args[]){
-	
-		int[] input = {1, 1, 3, 3};
+            if (A[i] == size - 1 - i)
+                return 1;
 
-		System.out.println(solve(input));
-	
-	}
+        }
+
+        return -1;
+    }
+
+    public static void main(String args[]) {
+
+        int[] input = { 1, 1, 3, 3 };
+
+        System.out.println(solve(input));
+
+    }
 
 }
