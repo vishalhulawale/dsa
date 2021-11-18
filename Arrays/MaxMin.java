@@ -52,34 +52,34 @@ Explanation 2:
  Maximum Element is 4 and Minimum element is 1. (4 + 1) = 5.
 
 */
+package Arrays;
 
 class MaxMin {
 
-	public static int solve(int[] A) {
-		int min = A[0];
-		int max = A[0];
-				
-		for(int i = 0; i < A.length; i++){
-		
-			if(A[i] > max)
-				max = A[i];
-				
-			if(A[i] < min)
-				min = A[i]; 
-		
-		}	
-		
-		return max + min;
-	}
+    public static int solve(int[] A) {
+        int min = A[0];
+        int max = A[0];
 
+        for (int i = 0; i < A.length; i++) {
 
-	public static void main(String[] args){
-	
-		int[] arr = {1, 3, 4, 1};
-		
-		int result = solve(arr);
-		
-		System.out.println(result);	
-	}
+            if (A[i] > max)
+                max = A[i];
+
+            if (A[i] < min)
+                min = A[i];
+
+        }
+
+        return max + min;
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr = { 1, 3, 4, 1 };
+
+        int result = solve(arr);
+
+        System.out.println(result);
+    }
 
 }

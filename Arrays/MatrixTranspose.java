@@ -50,47 +50,43 @@ Explanation 1:
 
 Cearly after converting rows to column and columns to rows of [[1, 2, 3],[4, 5, 6],[7, 8, 9]] we will get [[1, 4, 7], [2, 5, 8], [3, 6, 9]].
 */
+package Arrays;
 
 class MatrixTranspose {
-	public static int[][] solve(int[][] A){
-		int rows = A.length;
-		int cols = A[0].length;
-		
-		int[][] result = new int[cols][rows];
-		
-		for(int i = 0; i < cols; i++){
-			
-			for(int j = 0; j < rows; j++){
-				result[i][j] = A[j][i];	
-			}
-			
-		}
-		
-		return result;		
-	}
-	
-	
-	public static void print(int[][] A){
-    		for(int[] ar: A){
-        		for(int i : ar){
-            			System.out.print(i + " ");
-        		}
-        		
-        		System.out.print("\n");
-    		}
-	}
+    public static int[][] solve(int[][] A) {
+        int rows = A.length;
+        int cols = A[0].length;
 
-	public static void main(String[] args){
-	
-		int[][] input = {
-		{1, 2},
-		{1, 2},
-		{1, 2}
-		};
-		
-		int[][] output = solve(input);
+        int[][] result = new int[cols][rows];
 
-		print(output);	
-	}
+        for (int i = 0; i < cols; i++) {
+
+            for (int j = 0; j < rows; j++) {
+                result[i][j] = A[j][i];
+            }
+
+        }
+
+        return result;
+    }
+
+    public static void print(int[][] A) {
+        for (int[] ar : A) {
+            for (int i : ar) {
+                System.out.print(i + " ");
+            }
+
+            System.out.print("\n");
+        }
+    }
+
+    public static void main(String[] args) {
+
+        int[][] input = { { 1, 2 }, { 1, 2 }, { 1, 2 } };
+
+        int[][] output = solve(input);
+
+        print(output);
+    }
 
 }

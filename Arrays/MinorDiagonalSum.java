@@ -44,6 +44,7 @@ Explanation 2:
 
 A[1][2] + A[2][1] = 2 + 2 = 4
 */
+package Arrays;
 
 class MinorDiagonalSum {
 
