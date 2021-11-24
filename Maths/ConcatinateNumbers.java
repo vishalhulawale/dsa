@@ -58,6 +58,8 @@ Explanation 2:
 
  43 + 47 + 55 = 434755 
 */
+package Maths;
+
 import java.util.Arrays;
 
 class ConcatinateNumbers {

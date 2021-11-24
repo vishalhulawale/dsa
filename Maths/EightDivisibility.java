@@ -28,24 +28,25 @@ Input 2:
 Output 2:
     0
 */
+package Maths;
 
-class EightDivisibility{
-	public static int solve(String A){
-		int N = A.length();
-		
-		if(N > 3){
-			A = A.substring(N-3, N);
-		}
-			
-		if(Integer.parseInt(A) % 8 == 0)
-			return 1;
-		
-		return 0;
-	}
-	
-	public static void main(String[] args){
-    		String A = "123";
-    		
-    		System.out.println(solve(A));
-    	}
+class EightDivisibility {
+    public static int solve(String A) {
+        int N = A.length();
+
+        if (N > 3) {
+            A = A.substring(N - 3, N);
+        }
+
+        if (Integer.parseInt(A) % 8 == 0)
+            return 1;
+
+        return 0;
+    }
+
+    public static void main(String[] args) {
+        String A = "123";
+
+        System.out.println(solve(A));
+    }
 }

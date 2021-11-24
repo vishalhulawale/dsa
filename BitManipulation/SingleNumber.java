@@ -51,31 +51,32 @@ Explanation 2:
 
 1 occurs once.
 */
+package BitManipulation;
 
 class SingleNumber {
 
-	public static int solve(int[] A){
-	
-		int result = 0;
+    public static int solve(int[] A) {
 
-		for(int i = 0; i < A.length; i++){
-		
-			result = result ^ A[i];
+        int result = 0;
 
-		}
+        for (int i = 0; i < A.length; i++) {
 
-		return result;
+            result = result ^ A[i];
 
-	}
+        }
 
-	public static void main(String[] args){
-	
-		int[] input = {1, 2, 2, 3, 1};
+        return result;
 
-		int output = solve(input);
+    }
 
-		System.out.println(output);
+    public static void main(String[] args) {
 
-	}
+        int[] input = { 1, 2, 2, 3, 1 };
+
+        int output = solve(input);
+
+        System.out.println(output);
+
+    }
 
 }
