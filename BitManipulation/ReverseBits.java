@@ -38,39 +38,36 @@ Explanation 2:
 =>      11000000000000000000000000000000
 	1100000000000000000000000000000
 */
-
+package BitManipulation;
 
 public class ReverseBits {
 
-	
-	public static boolean checkSetBit(long A, int pos){
-	
-		return ((A >> pos) & 1) == 1;
-	
-	}
+    public static boolean checkSetBit(long A, int pos) {
 
-	public static long reverse(long A){
-		int N = 31;
-		long result = A;
-		
-		for(int i = 0; i <= N/2; i++){
-		
-			boolean lbit = checkSetBit(A, i);		
-			boolean rbit = checkSetBit(A, N-i);
-		
-			if(lbit != rbit){
-				result = result ^ ((1l << i) | (1l << (N-i)));
-			}
-		}
-		
-		return result;
-	}
-	
+        return ((A >> pos) & 1) == 1;
 
-        public static void main(String[] args){
-        ReverseBits r1 = new ReverseBits(); 
-                System.out.println("0 >" + r1.reverse(0)+" < should be 0");
-                System.out.println("3 >" + r1.reverse(3)+" < should be 3221225472");
+    }
+
+    public static long reverse(long A) {
+        int N = 31;
+        long result = A;
+
+        for (int i = 0; i <= N / 2; i++) {
+
+            boolean lbit = checkSetBit(A, i);
+            boolean rbit = checkSetBit(A, N - i);
+
+            if (lbit != rbit) {
+                result = result ^ ((1l << i) | (1l << (N - i)));
+            }
         }
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("0 >" + reverse(0) + " < should be 0");
+        System.out.println("3 >" + reverse(3) + " < should be 3221225472");
+    }
 
 }

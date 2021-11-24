@@ -10,56 +10,56 @@ a = "100"
 b = "11"
 Return a + b = "111".
 */
+package BitManipulation;
 
-class BinaryStringAdder{
+class BinaryStringAdder {
 
-	public static String solve(String A, String B){
-	
-		int carry = 0;
+    public static String solve(String A, String B) {
 
-		String result = "";
+        int carry = 0;
 
-		int length = A.length();
-		if(B.length() > length)
-			length = B.length();
+        String result = "";
 
-		for(int i = 0; i < length; i++){
-				
-			int bit1 = 0;
-			int bit2 = 0;
-		
+        int length = A.length();
+        if (B.length() > length)
+            length = B.length();
 
-			if(i <= A.length()-1)
-				bit1 = Character.getNumericValue(A.charAt(A.length()-i-1));
+        for (int i = 0; i < length; i++) {
 
-			if(i <= B.length()-1)
-				bit2 = Character.getNumericValue(B.charAt(B.length()-i-1));
+            int bit1 = 0;
+            int bit2 = 0;
 
-			int sum = carry + bit1 + bit2;
+            if (i <= A.length() - 1)
+                bit1 = Character.getNumericValue(A.charAt(A.length() - i - 1));
 
-			result = (sum%2) + result;
+            if (i <= B.length() - 1)
+                bit2 = Character.getNumericValue(B.charAt(B.length() - i - 1));
 
-			carry = sum/2;
+            int sum = carry + bit1 + bit2;
 
-		}
+            result = (sum % 2) + result;
 
-		while(carry != 0){
-			result = (carry%2) + result;
-			carry = carry / 2;
-		}
+            carry = sum / 2;
 
-		return result;
-	}
+        }
 
-	public static void main(String[] args){
-		
-		String str1 = "1011";
+        while (carry != 0) {
+            result = (carry % 2) + result;
+            carry = carry / 2;
+        }
 
-		String str2 = "100";
+        return result;
+    }
 
-		String output = solve(str1, str2);
+    public static void main(String[] args) {
 
-		System.out.println(output);
-	}
+        String str1 = "1011";
+
+        String str2 = "100";
+
+        String output = solve(str1, str2);
+
+        System.out.println(output);
+    }
 
 }

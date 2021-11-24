@@ -31,45 +31,43 @@ Example Explanation
 Explaination1:
 11 is represented as 1011 in binary.
 */
+package BitManipulation;
 
 class NumberOf1Bits {
 
+    public static int solve(int A) {
 
-	public static int solve(int A){
-	
-		int quotient = 0;
+        int quotient = 0;
 
-		int count = 0;
+        int count = 0;
 
-		do {
-			
-			quotient = A / 2;
+        do {
 
-			System.out.println("Quotient: "+ quotient);
-			System.out.println("Mod 2: "+ A%2);
+            quotient = A / 2;
 
-			if(A%2 == 1) {		
-				count++;
-			}
+            System.out.println("Quotient: " + quotient);
+            System.out.println("Mod 2: " + A % 2);
 
+            if (A % 2 == 1) {
+                count++;
+            }
 
-			A = quotient;
+            A = quotient;
 
-		} while(quotient != 0);
+        } while (quotient != 0);
 
-		return count;
+        return count;
 
-	}
+    }
 
+    public static void main(String[] args) {
 
-	public static void main(String[] args){
-	
-		int input = 11;
+        int input = 11;
 
-		int output = solve(input);
+        int output = solve(input);
 
-		System.out.println(output);
-	
-	}
+        System.out.println(output);
+
+    }
 
 }
