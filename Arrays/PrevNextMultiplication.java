@@ -26,42 +26,41 @@ Output 2:
     [85, 500, 187, 1100]
 
 */
+package Arrays;
 
-class PrevNextMultiplication{
+class PrevNextMultiplication {
 
-	public static int[] solve(int[] A) {
-		int size = A.length;
-		
-		if(size == 1)
-		    return A;
-		
-		int[] result = new int[size];
-				
-		for(int i = 1; i < size-1; i++){
-		
-			 result[i] = A[i-1] * A[i+1];
-		
-		}	
-		
-		result[0] = A[0] * A[1];
-		result[size-1] = A[size-1] * A[size-2];
-		
-		return result;
-	}
+    public static int[] solve(int[] A) {
+        int size = A.length;
 
+        if (size == 1)
+            return A;
 
-	public static void main(String[] args){
-	
-		int[] arr = {1, 2, 3, 4, 5};
-		
-		int[] result = solve(arr);
-		
-		for(int num : result){
-		
-			System.out.println(num);	
-		
-		}
-			
-	}
+        int[] result = new int[size];
+
+        for (int i = 1; i < size - 1; i++) {
+
+            result[i] = A[i - 1] * A[i + 1];
+
+        }
+
+        result[0] = A[0] * A[1];
+        result[size - 1] = A[size - 1] * A[size - 2];
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr = { 1, 2, 3, 4, 5 };
+
+        int[] result = solve(arr);
+
+        for (int num : result) {
+
+            System.out.println(num);
+
+        }
+
+    }
 }
-

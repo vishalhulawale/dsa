@@ -53,43 +53,43 @@ Explanation 2:
  7 and 11 are prime numbers. Hence, Primal Power = 2.
 
 */
+package Arrays;
 
 class PrimalPower {
 
-	public static boolean isPrime(int num){
-		if(num <= 1)
-			return false;
-			
-		for(int i = 2; i*i <= num; i++){
-			if(num % i == 0)
-				return false;
-		}
-		
-		return true;
-	}
+    public static boolean isPrime(int num) {
+        if (num <= 1)
+            return false;
 
-	public static int solve(int[] A) {
+        for (int i = 2; i * i <= num; i++) {
+            if (num % i == 0)
+                return false;
+        }
 
-		int cnt = 0;
-	
-		for(int i = 0; i < A.length; i++){
-			
-			if(isPrime(A[i]))
-				cnt++;
-			
-		}
-		
-		return cnt;
-	}
+        return true;
+    }
 
-	public static void main(String[] args){
-	
-		int[] arr = {-11, 7, 8, 9, 10, 11};
-		
-		int result = solve(arr);
-		
-		System.out.println(result);	
-					
-	}
+    public static int solve(int[] A) {
+
+        int cnt = 0;
+
+        for (int i = 0; i < A.length; i++) {
+
+            if (isPrime(A[i]))
+                cnt++;
+
+        }
+
+        return cnt;
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr = { -11, 7, 8, 9, 10, 11 };
+
+        int result = solve(arr);
+
+        System.out.println(result);
+
+    }
 }
-

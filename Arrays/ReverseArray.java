@@ -51,32 +51,33 @@ Explanation 2:
 
 Clearly, Reverse of [1,1,10] is [10,1,1]
 */
+package Arrays;
 
-class ReverseArray{
+class ReverseArray {
 
-	  public static int[] solve(final int[] A) {
-    		
-    		int size = A.length;
-    		
-    		int[] result = new int[size];
-    		
-    		for(int i = 0; i <= size-1; i++){
-   			result[i] = A[size-i-1];    			 		
-    		}
-    		
-    		return result;    		
-    	  }
-	
-	public static void main(String[] args){
-	
-		int[] arr = {1,2,3,4,1};
-		
-		int[] result = solve(arr);
-		
-		for(int num : result){
-			System.out.println(num);
-		}
-	
-	}
+    public static int[] solve(final int[] A) {
+
+        int size = A.length;
+
+        int[] result = new int[size];
+
+        for (int i = 0; i <= size - 1; i++) {
+            result[i] = A[size - i - 1];
+        }
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr = { 1, 2, 3, 4, 1 };
+
+        int[] result = solve(arr);
+
+        for (int num : result) {
+            System.out.println(num);
+        }
+
+    }
 
 }
