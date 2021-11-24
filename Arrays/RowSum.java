@@ -46,6 +46,7 @@ Row 1 = 1+2+3+4 = 10
 Row 2 = 5+6+7+8 = 26
 Row 3 = 9+2+3+4 = 18
 */
+package Arrays;
 
 class RowSum {
     public static int[] solve(int[][] A) {
@@ -66,11 +67,7 @@ class RowSum {
     }
 
     public static void main(String[] args) {
-        int[][] input ={
-            {1,2,3,4},
-            {5,6,7,8},
-            {9,2,3,4},
-        };
+        int[][] input = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 2, 3, 4 }, };
 
         int[] result = solve(input);
 

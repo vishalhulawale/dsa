@@ -31,35 +31,35 @@ Example Output
 Example Explanation
 We can change the array A = [4, 4, 4, 4, 4]. The time required will be 8 seconds.
 */
+package Arrays;
 
-class TimeToEqulify{
+class TimeToEqulify {
 
-	public static int solve(int[] A) {
+    public static int solve(int[] A) {
 
-		int max = A[0];
-		
-		for(int i = 1; i < A.length; i++){
-			if(A[i] > max)
-				max = A[i];
-		}
-		
-		int time = 0;
-		
-		for(int i = 0; i < A.length; i++){
-			time += (max-A[i]);
-		}
-		
-		
-		return time;
-	
-	}
+        int max = A[0];
 
-	public static void main(String[] args){
+        for (int i = 1; i < A.length; i++) {
+            if (A[i] > max)
+                max = A[i];
+        }
 
-		int[] arr = {2, 4, 1, 3, 2};
-		
-		System.out.println(solve(arr));
+        int time = 0;
 
-	}
+        for (int i = 0; i < A.length; i++) {
+            time += (max - A[i]);
+        }
+
+        return time;
+
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr = { 2, 4, 1, 3, 2 };
+
+        System.out.println(solve(arr));
+
+    }
 
 }

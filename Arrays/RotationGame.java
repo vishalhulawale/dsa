@@ -58,63 +58,62 @@ Explanation 2:
 
  [1,2,2] => [2,1,2] => [2,2,1] => [1,2,2]
 */
+package Arrays;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 class RotationGame {
 
-	public static void reverse(int[] A, int si, int ei){
-	
-		int i = si, j = ei;
-		
-		while(i <= j){
-		
-			int temp =  A[i];
-			A[i] = A[j];
-			A[j] = temp;
-			
-			i++;
-			j--;
-		
-		}
-	
-	}
+    public static void reverse(int[] A, int si, int ei) {
 
+        int i = si, j = ei;
 
-	public static int[] rotate(int[] A, int B){
-		int size = A.length;
-		
-		int cnt = B % size;
-		
-		reverse(A, 0, size-1);
-		reverse(A, 0, cnt-1);
-		reverse(A, cnt, size-1);
-				
-		return A;
-	}
+        while (i <= j) {
 
-	public static void main(String[] args){
-		
-		Scanner in = new Scanner(System.in);
-		
-		int size = in.nextInt();
-		
-		int[] input = new int[size];
-		
-		for(int i = 0; i < size; i++){
-			input[i] = in.nextInt();		
-		}
-		
-		int cnt = in.nextInt();
-		
-		in.close();
-		
-		int[] result = rotate(input, cnt);
-		
- 		for(int i : result)
- 			System.out.print(i+" ");
-		
-	}
+            int temp = A[i];
+            A[i] = A[j];
+            A[j] = temp;
+
+            i++;
+            j--;
+
+        }
+
+    }
+
+    public static int[] rotate(int[] A, int B) {
+        int size = A.length;
+
+        int cnt = B % size;
+
+        reverse(A, 0, size - 1);
+        reverse(A, 0, cnt - 1);
+        reverse(A, cnt, size - 1);
+
+        return A;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+
+        int size = in.nextInt();
+
+        int[] input = new int[size];
+
+        for (int i = 0; i < size; i++) {
+            input[i] = in.nextInt();
+        }
+
+        int cnt = in.nextInt();
+
+        in.close();
+
+        int[] result = rotate(input, cnt);
+
+        for (int i : result)
+            System.out.print(i + " ");
+
+    }
 
 }
