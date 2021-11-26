@@ -50,25 +50,26 @@ Explanation 1:
  AA -> 27
  AB -> 28
  */
- 
- class ExcelColumn{
- 	public static int solve(String A){
-        	int ans = 0;
- 		int N = A.length();
- 		int exp = 1;
- 		
- 		for(int i = N-1; i >= 0; i--){
- 			int charVal = ((int) A.charAt(i)) - 64;	
- 			ans += charVal * exp;
- 			
- 			exp *= 26; 
- 		}
- 		
- 		return ans;
- 	}
- 	
- 	public static void main(String[] args){
- 		System.out.println(solve("AB")); 	
- 	}
- 
- }
+package Maths;
+
+class ExcelColumn {
+    public static int solve(String A) {
+        int ans = 0;
+        int N = A.length();
+        int exp = 1;
+
+        for (int i = N - 1; i >= 0; i--) {
+            int charVal = ((int) A.charAt(i)) - 64;
+            ans += charVal * exp;
+
+            exp *= 26;
+        }
+
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(solve("AB"));
+    }
+
+}

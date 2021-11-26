@@ -46,6 +46,7 @@ Explanation 2:
 
 43535321 % 47 = 20
 */
+package Maths;
 
 class ModString {
 

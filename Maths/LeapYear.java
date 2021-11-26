@@ -51,9 +51,10 @@ Explanation 2:
 
  1999 is not a leap year.
 */
+package Maths;
 
 class LeapYear {
-    
+
     public static int solve(int A) {
         if (A % 400 == 0)
             return 1;
