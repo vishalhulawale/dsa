@@ -52,41 +52,39 @@ Maximum of all even numbers = 100
 Minimum of all odd numbers = 1
 ans = 100 - 1 = 99
 */
-
+package ProblemSolving;
 
 import java.util.ArrayList;
 
-class MinimumPicks{
-	public static int solve(ArrayList<Integer> A) {
-		
-		Integer maxEven = null;
-        	Integer minOdd = null;
+class MinimumPicks {
+    public static int solve(ArrayList<Integer> A) {
 
-	        for(int num : A) {
-        	    if(num % 2 == 0) {
-                	if(maxEven == null || num > maxEven)
-	                    maxEven =  num;
-        	    }else {
-                	if(minOdd == null || num < minOdd)
-                    		minOdd =  num;
-            	    }
-        	}
+        Integer maxEven = null;
+        Integer minOdd = null;
 
-        	return maxEven - minOdd;
-    	}
+        for (int num : A) {
+            if (num % 2 == 0) {
+                if (maxEven == null || num > maxEven)
+                    maxEven = num;
+            } else {
+                if (minOdd == null || num < minOdd)
+                    minOdd = num;
+            }
+        }
 
-	public static void main(String[] args){
-	
+        return maxEven - minOdd;
+    }
 
-		ArrayList<Integer> input = new ArrayList<Integer>();
-		input.add(0);
-		input.add(2);
-		input.add(9);
+    public static void main(String[] args) {
 
+        ArrayList<Integer> input = new ArrayList<Integer>();
+        input.add(0);
+        input.add(2);
+        input.add(9);
 
-		int result = solve(input);
+        int result = solve(input);
 
-		System.out.println(result);
-	}
+        System.out.println(result);
+    }
 
 }

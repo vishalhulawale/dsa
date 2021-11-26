@@ -60,68 +60,65 @@ Explanation 2:
  Number of elements greater than 5: 3
  Elements 5 and 11 have atleast 2 elements strictly greater than themselves.
  */
+package ProblemSolving;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 
-class LeastTwoGreaterElements{
+class LeastTwoGreaterElements {
 
-	  public static ArrayList<Integer> solve(ArrayList<Integer> A) {
-    
-		  Integer largest = null;
-		  Integer secondLargest = null;
+    public static ArrayList<Integer> solve(ArrayList<Integer> A) {
 
+        Integer largest = null;
+        Integer secondLargest = null;
 
-		  for(int i = 0; i < A.size(); i++){
-			  int num = A.get(i);
-		  
-			  if(largest == null || largest < num){
-				  secondLargest = largest; 
-				  largest = num;
-			  } else if(secondLargest == null ||  num > secondLargest){
-				  secondLargest = num;
-			  }
-		  }
-		  
+        for (int i = 0; i < A.size(); i++) {
+            int num = A.get(i);
 
-		  System.out.println(largest);
-		  System.out.println(secondLargest);
+            if (largest == null || largest < num) {
+                secondLargest = largest;
+                largest = num;
+            } else if (secondLargest == null || num > secondLargest) {
+                secondLargest = num;
+            }
+        }
 
-		  ArrayList<Integer> result = new ArrayList<Integer>();
+        System.out.println(largest);
+        System.out.println(secondLargest);
 
-		  for(int i = 0; i < A.size(); i++){
-		  
-			  int num = A.get(i);
+        ArrayList<Integer> result = new ArrayList<Integer>();
 
-			  if(num < largest && num < secondLargest)
-				  result.add(num);
-		  
-		  }
+        for (int i = 0; i < A.size(); i++) {
 
-		  return result;	  
-	  }
+            int num = A.get(i);
 
-	  public static void print(ArrayList<Integer> list){
-	  
-		  for(Integer num : list){
+            if (num < largest && num < secondLargest)
+                result.add(num);
 
-			  System.out.println(num);
-		  }
-	  }
+        }
 
-	  public static void main(String[] args){
-	  
-		  int[] arr={1, 2, 3, 4, 5};
-		  
-		  ArrayList<Integer> input = new ArrayList<Integer>();
-		  
-		  for(int num:arr)
-			  input.add(num);
+        return result;
+    }
 
-		  ArrayList<Integer> result = solve(input); 
-	 
-		 // print(result); 
-	  }
+    public static void print(ArrayList<Integer> list) {
+
+        for (Integer num : list) {
+
+            System.out.println(num);
+        }
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr = { 1, 2, 3, 4, 5 };
+
+        ArrayList<Integer> input = new ArrayList<Integer>();
+
+        for (int num : arr)
+            input.add(num);
+
+        ArrayList<Integer> result = solve(input);
+
+        // print(result);
+    }
 
 }
