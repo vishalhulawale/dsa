@@ -47,61 +47,58 @@ Output 2:
 
  [[-1, -2]]
  */
- 
+package Arrays;
+
 class MatrixSubstraction {
 
-	public static int[][] solve(int[][] A, int[][] B) {
-    		int M = A.length;
-    		int N = A[0].length;
-    	
-    		int[][] result = new int[M][N];
-    		
-    		for(int i = 0; i < M; i++){
-    		
-	    		for(int j = 0; j < N; j++){
-    					
-    					result[i][j] = A[i][j] - B[i][j];
-    					
-    			}
-    	
-    		}
-    		
-    		return result;
-    	}
+    public static int[][] solve(int[][] A, int[][] B) {
+        int M = A.length;
+        int N = A[0].length;
 
-    	public static void print(int[][] A){
-    	
-    		int M = A.length;
-    		
-    		for(int i = 0; i < M; i++){
-    		
-    			int N = A[i].length;
-    			
-    			for(int j = 0; j < N; j++){
-    			
-    				System.out.print(A[i][j]+" ");
-    			
-    			}	
-    			
-    			System.out.print("\n");
-    			
-    		}
-    	
-    	}
+        int[][] result = new int[M][N];
 
-	public static void main(String[] args){
-	
-		int[][] input1 = {{1, 2, 3},            
-      				  {4, 5, 6},                
-      				  {7, 8, 9}};                 
-	
-		int[][] input2  = {{9, 8, 7},
-	 			   {6, 5, 4},
-		    		   {3, 2, 1}};
-		    		   
-		int[][] result = solve(input1, input2);
-		
-		print(result);
-	}
+        for (int i = 0; i < M; i++) {
+
+            for (int j = 0; j < N; j++) {
+
+                result[i][j] = A[i][j] - B[i][j];
+
+            }
+
+        }
+
+        return result;
+    }
+
+    public static void print(int[][] A) {
+
+        int M = A.length;
+
+        for (int i = 0; i < M; i++) {
+
+            int N = A[i].length;
+
+            for (int j = 0; j < N; j++) {
+
+                System.out.print(A[i][j] + " ");
+
+            }
+
+            System.out.print("\n");
+
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        int[][] input1 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+
+        int[][] input2 = { { 9, 8, 7 }, { 6, 5, 4 }, { 3, 2, 1 } };
+
+        int[][] result = solve(input1, input2);
+
+        print(result);
+    }
 
 }

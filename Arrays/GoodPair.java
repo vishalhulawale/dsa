@@ -66,31 +66,32 @@ Explanation 3:
  (i,j) = (2,3)
 
 */
+package Arrays;
 
 class GoodPair {
-	
-	public static int solve(int[] A, int B){
-		int size = A.length;
-		
-		for(int i = 0; i <= size-1; i++){
-			for(int j = i+1; j < size; j++){
-			
-				if(A[i]+A[j] == B)
-					return 1;			
-			
-			}
-		}
-		
-		return 0;
-	}
 
-	public static void main(String[] args){
-	
-		int[] arr = {1,2,3,4};
-		
-		int result = solve(arr, 7);
-		
-		System.out.println(result);
-	
-	}	
+    public static int solve(int[] A, int B) {
+        int size = A.length;
+
+        for (int i = 0; i <= size - 1; i++) {
+            for (int j = i + 1; j < size; j++) {
+
+                if (A[i] + A[j] == B)
+                    return 1;
+
+            }
+        }
+
+        return 0;
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr = { 1, 2, 3, 4 };
+
+        int result = solve(arr, 7);
+
+        System.out.println(result);
+
+    }
 }

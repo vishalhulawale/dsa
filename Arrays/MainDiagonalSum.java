@@ -54,6 +54,7 @@ Explanation 2:
 
  A[1][1] + A[2][2] = 3 + 3 = 6
  */
+package Arrays;
 
 class MainDiagonalSum {
     public static int solve(int[][] A) {

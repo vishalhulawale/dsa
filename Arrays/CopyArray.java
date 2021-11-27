@@ -57,30 +57,31 @@ A[2] + 3 = 3 + 3 = 6
 A[3] + 3 = 2 + 3 = 5
 A[4] + 3 = 1 + 3 = 4
 */
+package Arrays;
 
-class CopyArray{
+class CopyArray {
 
     public static int[] solve(final int[] A, int B) {
         int[] Arr = new int[A.length];
-        
-        for(int i = 0; i < A.length; i++){
+
+        for (int i = 0; i < A.length; i++) {
             Arr[i] = A[i] + B;
         }
-        
+
         return Arr;
     }
-    
-    public static void main(String[] args){
-    
-    	int[] input = {1,2,3,4,5,5};
-    	
-    	int[] result = solve(input, 7);
-    	
-    	for(int num : result){
-    	
-    		System.out.println(num);
-    	}
-    
+
+    public static void main(String[] args) {
+
+        int[] input = { 1, 2, 3, 4, 5, 5 };
+
+        int[] result = solve(input, 7);
+
+        for (int num : result) {
+
+            System.out.println(num);
+        }
+
     }
 
 }

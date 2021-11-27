@@ -40,46 +40,47 @@ Explanation 1:
  3 is divisible by 3 so it is replaced by "Fizz".
  Similarly, 5 is divisible by 5 so it is replaced by "Buzz".
  */
- 
- public class FizzBuzz{
- 
- public static String[] solve(int A){
- 
- 	String[] result = new String[A];
- 
- 	for(int i = 1; i <= A; i++){
- 	
-		StringBuilder str = new StringBuilder(); 
- 	
- 		if(i % 3 == 0){
- 			str.append("Fizz"); 		
- 		}
- 		
- 		if(i % 5 == 0){
- 		 	str.append("Buzz"); 	
- 		}
- 				
- 		if(str.length() == 0){
- 		 	result[i-1] = Integer.toString(i); 
- 		}else{
- 			result[i-1] = str.toString();
- 		}
- 			
- 	}
- 	
- 	return result; 
- }
- 
- public static void main(String[] args){
- 
- int input = 15;
- 
- String[] result = solve(input);
- 
- for(String str : result){
- System.out.println(str);
- }
- 
- }
- 
- }
+package Arrays;
+
+public class FizzBuzz {
+
+    public static String[] solve(int A) {
+
+        String[] result = new String[A];
+
+        for (int i = 1; i <= A; i++) {
+
+            StringBuilder str = new StringBuilder();
+
+            if (i % 3 == 0) {
+                str.append("Fizz");
+            }
+
+            if (i % 5 == 0) {
+                str.append("Buzz");
+            }
+
+            if (str.length() == 0) {
+                result[i - 1] = Integer.toString(i);
+            } else {
+                result[i - 1] = str.toString();
+            }
+
+        }
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+
+        int input = 15;
+
+        String[] result = solve(input);
+
+        for (String str : result) {
+            System.out.println(str);
+        }
+
+    }
+
+}

@@ -49,6 +49,8 @@ Explanation 1:
 ==> [[2*1, 2*2, 2*3],[2*4, 2*5, 2*6],[2*7, 2*8, 2*9]]
 ==> [[2, 4, 6], [8, 10, 12], [14, 16, 18]]
 */
+package Arrays;
+
 class MatrixScalerProduct {
 
     public static int[][] solve(int[][] A, int B) {
@@ -71,7 +73,7 @@ class MatrixScalerProduct {
 
         for (int[] is : res) {
             for (int i : is) {
-                System.out.print(i+" ");
+                System.out.print(i + " ");
             }
             System.out.print("\n");
         }

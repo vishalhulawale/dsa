@@ -58,59 +58,61 @@ Explanation 2:
 
  Only 2 the rightmost element is the leader in the array.
 */
+package Arrays;
+
 import java.util.ArrayList;
 
 class LeaderInArray {
 
-	public static ArrayList<Integer> solve(ArrayList<Integer> A){
+    public static ArrayList<Integer> solve(ArrayList<Integer> A) {
 
-		int size = A.size();
-		
-		ArrayList<Integer> result = new ArrayList<Integer>();
-				
-		for (int i = 0; i < size-1; i++){
-		
-			boolean isLeader = true;
-		
-			for(int j = i+1; j < size; j++){
-			
-				if(A.get(j) > A.get(i)){
-					isLeader = false;
-					break;
-				}
-			
-			}
-			
-			if(isLeader){
-				result.add(A.get(i));
-			}
-		
-		}
-		
-		result.add(A.get(size-1));
-		
-		return result;		
-	}
+        int size = A.size();
 
-	public static void main(String[] args){
-	
-		ArrayList<Integer> input = new ArrayList<Integer>();
-		//16, 17, 4, 3, 5, 2
-		input.add(16);
-		input.add(17);
-		input.add(4);
-		input.add(3);
-		input.add(5);
-		input.add(2);
-		
-		ArrayList<Integer> result = solve(input);
-		
-		for(int num : result){
-		
-			System.out.println(num);
-		
-		}
-	
-	}
+        ArrayList<Integer> result = new ArrayList<Integer>();
+
+        for (int i = 0; i < size - 1; i++) {
+
+            boolean isLeader = true;
+
+            for (int j = i + 1; j < size; j++) {
+
+                if (A.get(j) > A.get(i)) {
+                    isLeader = false;
+                    break;
+                }
+
+            }
+
+            if (isLeader) {
+                result.add(A.get(i));
+            }
+
+        }
+
+        result.add(A.get(size - 1));
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+
+        ArrayList<Integer> input = new ArrayList<Integer>();
+        // 16, 17, 4, 3, 5, 2
+        input.add(16);
+        input.add(17);
+        input.add(4);
+        input.add(3);
+        input.add(5);
+        input.add(2);
+
+        ArrayList<Integer> result = solve(input);
+
+        for (int num : result) {
+
+            System.out.println(num);
+
+        }
+
+    }
 
 }

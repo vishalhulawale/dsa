@@ -1,3 +1,5 @@
+package Arrays;
+
 class CompareMatrices {
 
     public static int solve(int[][] A, int[][] B) {

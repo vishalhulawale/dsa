@@ -47,45 +47,42 @@ Column 2 = 2+6+2 = 10
 Column 3 = 3+7+3 = 13
 Column 4 = 4+8+4 = 16
 */
+package Arrays;
 
 class ColumnSum {
-	public static int[] solve(int[][] A){
-	
-		int M = A.length;
-		int N = A[0].length;
-		
-		int[] result = new int[N];
-		
-		for(int i = 0; i < N; i++){
-		
-			int sum = 0;
-			
-			for(int j = 0; j < M; j++){
-				sum = sum + A[j][i];
-			}
-			
-			result[i] = sum;	
-			
-		}
-		
-		return result;
-	
-	}
+    public static int[] solve(int[][] A) {
 
-	public static void main(String[] args){
-	
-		int[][] input = {
-					{1,2,3,4},
-					{5,6,7,8},
-					{9,2,3,4}
-				};
-				
-		int[] output = solve(input);
-		
-		for(int num : output){
-			System.out.println(num);
-		}
-	
-	}
+        int M = A.length;
+        int N = A[0].length;
+
+        int[] result = new int[N];
+
+        for (int i = 0; i < N; i++) {
+
+            int sum = 0;
+
+            for (int j = 0; j < M; j++) {
+                sum = sum + A[j][i];
+            }
+
+            result[i] = sum;
+
+        }
+
+        return result;
+
+    }
+
+    public static void main(String[] args) {
+
+        int[][] input = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 2, 3, 4 } };
+
+        int[] output = solve(input);
+
+        for (int num : output) {
+            System.out.println(num);
+        }
+
+    }
 
 }
