@@ -27,61 +27,61 @@ Example Output:
 Explanation:
     only 2 have a strictly smaller and strictly greater element, 1 and 3 respectively.
 */
-
+package ProblemSolving;
 
 import java.util.ArrayList;
 
 class StrictlySmallerGreater {
 
-	public static int solve(ArrayList<Integer> A) {
+    public static int solve(ArrayList<Integer> A) {
 
-		int size = A.size();
+        int size = A.size();
 
-		Integer min = null;
-		Integer max = null;
+        Integer min = null;
+        Integer max = null;
 
-		for(int i = 0; i < size; i++) {
-		
-			int num = A.get(i);
+        for (int i = 0; i < size; i++) {
 
-			if(min == null || num < min)
-				min = num;
+            int num = A.get(i);
 
-			if(max == null || num > max)
-				max = num;
+            if (min == null || num < min)
+                min = num;
 
-		}
+            if (max == null || num > max)
+                max = num;
 
-		int count = 0;
+        }
 
-		for(int i = 0; i < size; i++) {
-		
-			if(A.get(i) > min && A.get(i) < max)
-				count++;
+        int count = 0;
 
-		}
+        for (int i = 0; i < size; i++) {
 
-		return count;
-	}
+            if (A.get(i) > min && A.get(i) < max)
+                count++;
 
-	public static void print(ArrayList<Integer> A) {
-	
-		for(Integer num : A)
-			System.out.println(num);
+        }
 
-	}
+        return count;
+    }
 
-	public static void main(String[] args) {
+    public static void print(ArrayList<Integer> A) {
 
-			ArrayList<Integer> input = new ArrayList<Integer>();
-			input.add(3);
-			input.add(2);
-			input.add(1);
+        for (Integer num : A)
+            System.out.println(num);
 
-			int result = solve(input);
+    }
 
-			System.out.println(result);
-	
-	}
+    public static void main(String[] args) {
+
+        ArrayList<Integer> input = new ArrayList<Integer>();
+        input.add(3);
+        input.add(2);
+        input.add(1);
+
+        int result = solve(input);
+
+        System.out.println(result);
+
+    }
 
 }

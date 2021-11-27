@@ -55,37 +55,38 @@ Explanation 2:
 
  As there is only one element in the array, there are no adjacent element pairs. So, an empty integer array is returned.
 */
+package TimeComplexity;
 
-class AdjancentDifferenceArray{
+class AdjancentDifferenceArray {
 
-	public static int[] solve(int[] A) {
+    public static int[] solve(int[] A) {
 
-	int size = A.length;
+        int size = A.length;
 
-	int[] result =  new int[size-1];	
-	
-	for (int i = 0; i < size-1; i++){
-	
-		result[i] = A[i+1] - A[i];
-		
-	}
-	
-	return result;
-		
-	}
+        int[] result = new int[size - 1];
 
-	public static void main(String[] args){
+        for (int i = 0; i < size - 1; i++) {
 
-	int[] arr = {6, 2, 4, 4, 3};
-	
-	int[] result = solve(arr);
-	
-	for(int num : result){
-	
-		System.out.println(num);
-	
-	}
+            result[i] = A[i + 1] - A[i];
 
-}
+        }
+
+        return result;
+
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr = { 6, 2, 4, 4, 3 };
+
+        int[] result = solve(arr);
+
+        for (int num : result) {
+
+            System.out.println(num);
+
+        }
+
+    }
 
 }

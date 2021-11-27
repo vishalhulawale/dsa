@@ -47,45 +47,44 @@ Explanation 1:
  1 is present 4 times in the array. So, 3 of them are redundant.
  10 is present 2 times in the array. So, 1 of them is redundant.
  25 is present 2 times in tha array. So, 1 of them is redundant.
- Total duplicates(redundants) = 3 + 1 + 1 = 5 
+ Total duplicates(redundant) = 3 + 1 + 1 = 5 
 Explanation 2:
 
  There are no duplicates in the array (Each element has distinct value).
 */
+package TimeComplexity;
 
 class CountDuplicate {
 
-	public static int solve(int[] A){
-	
-		int size = A.length;
-		
-		int count = 0;
-		
-		for(int i = 0; i < size; i++){
-		
-			for(int j = i+1; j < size; j++){
-			
-			if(A[i] == A[j]){
-				count++;
-				break;
-			}
-			
-			}
-		
-		}
-		
-		return count;
-	
-	}
+    public static int solve(int[] A) {
 
-	public static void main(String args[]){
-	
-	int[] arr = {1, 10, 20, 1, 25, 1, 10, 30, 25, 1};
-	
-	System.out.println(solve(arr));
-	
-	}
+        int size = A.length;
 
+        int count = 0;
+
+        for (int i = 0; i < size; i++) {
+
+            for (int j = i + 1; j < size; j++) {
+
+                if (A[i] == A[j]) {
+                    count++;
+                    break;
+                }
+
+            }
+
+        }
+
+        return count;
+
+    }
+
+    public static void main(String args[]) {
+
+        int[] arr = { 1, 10, 20, 1, 25, 1, 10, 30, 25, 1 };
+
+        System.out.println(solve(arr));
+
+    }
 
 }
-
