@@ -40,71 +40,69 @@ Explanation 2:
 
 */
 
+package BitManipulation;
+
 public class SmallestXOR {
-    
-        public static int countSetBits(int A){
-            
-            int cnt = 0;
-            
-            
-            while(A > 0){
-                
-                if((A&1) == 1)
-                    cnt++;
-                
-                A = A >> 1;
+
+    public static int countSetBits(int A) {
+
+        int cnt = 0;
+
+        while (A > 0) {
+
+            if ((A & 1) == 1)
+                cnt++;
+
+            A = A >> 1;
+        }
+
+        return cnt;
+    }
+
+    public static boolean checkSetBit(int A, int pos) {
+
+        return ((A >> pos) & 1) == 1;
+
+    }
+
+    public static int solve(int A, int B) {
+
+        int setBitCnt = countSetBits(A);
+
+        if (setBitCnt == B)
+            return A;
+
+        int X = A;
+
+        if (setBitCnt > B) {
+
+            int diff = setBitCnt - B;
+
+            for (int i = 0; i < diff; i++) {
+
+                if (checkSetBit(A, i))
+                    X = X ^ (1 << i);
+
             }
-            
-            return cnt;
-        }
-        
-        public static boolean checkSetBit(int A, int pos){
-            
-            return ((A >> pos) & 1) == 1;
-            
-        }
+        } else {
 
-        public static int solve(int A, int B){
+            for (int i = 0; i < B; i++) {
 
-                int setBitCnt = countSetBits(A);
-                
-                if(setBitCnt == B)
-                    return A;
-                    
-                int X = A;
-                
-                if(setBitCnt > B){
-                    
-                    int diff = setBitCnt - B;
-                    
-                    for(int i = 0; i < diff; i++){
-                        
-                        if(checkSetBit(A, i))
-                            X = X ^ (1 << i);
-                        
-                    }
-                } else {
-                
-                    int diff = B - setBitCnt;
-                    
-                    for(int i = 0; i < B; i++){
-                        
-                        if(!checkSetBit(A, i))
-                            X = X ^ (1 << i);
-                            
-                    }
-                    
-                }
-                
-                return X;
+                if (!checkSetBit(A, i))
+                    X = X ^ (1 << i);
+
+            }
 
         }
 
-        public static void main(String[] args){
-                System.out.println("3, 3 > "+ solve(3,3)+" < should be 7");
-                System.out.println("15, 2 > "+ solve(15,2)+" < should be 12");
-                System.out.println("9, 3 > "+ solve(9,3)+" < should be 15");
-        }
+        return X;
+
+    }
+
+    public static void main(String[] args) {
+        System.out.println("3, 3 > " + solve(3, 3) + " < should be 7");
+        System.out.println("15, 2 > " + solve(15, 2) + " < should be 12");
+        System.out.println("9, 3 > " + solve(9, 3) + " < should be 15");
+    }
 
 }
-
