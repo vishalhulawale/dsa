@@ -76,47 +76,48 @@ Explanation 3:
 
 
 */
+package TimeComplexity;
 
 import java.util.Scanner;
 
-class EvenOddElements{
+class EvenOddElements {
 
-	public static void main(String[] args){
-	
-	Scanner in = new Scanner(System.in);
-	
-	int num = in.nextInt();
-	
-	//System.out.println("num "+num);
-	
-	for(int i = 0; i < num; i++){
-		int cnt = in.nextInt();
-		
-		int even = 0;
-		int odd = 0;
-		
-	for(int j = 0; j < cnt; j++){
-		int input = in.nextInt();
-		
-		if((input|1) == input)
-			odd++;
-		else
-			even++;
-	}
-	
-		int output = even - odd;
-		
-		if(output < 0) 
-			output = output * -1;
-		
-		System.out.println(output);
-		
-		// System.out.println("cnt "+ cnt);
-	
-	}
-	
-	in.close();
-	
-	}
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+
+        int num = in.nextInt();
+
+        // System.out.println("num "+num);
+
+        for (int i = 0; i < num; i++) {
+            int cnt = in.nextInt();
+
+            int even = 0;
+            int odd = 0;
+
+            for (int j = 0; j < cnt; j++) {
+                int input = in.nextInt();
+
+                if ((input | 1) == input)
+                    odd++;
+                else
+                    even++;
+            }
+
+            int output = even - odd;
+
+            if (output < 0)
+                output = output * -1;
+
+            System.out.println(output);
+
+            // System.out.println("cnt "+ cnt);
+
+        }
+
+        in.close();
+
+    }
 
 }
