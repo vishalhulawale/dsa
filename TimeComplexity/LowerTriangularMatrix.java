@@ -57,46 +57,44 @@ Explanation 2:
  As A[1][2] is not equal to zero, it is not a lower triangular matrix.
 
 */
-
+package TimeComplexity;
 
 class LowerTriangularMatrix {
 
-	public static int solve(final int[][] A) {
-	
-	int rows = A.length;
-	
-	int result = 1;
-	
-	for (int i = 0; i < rows; i++){
-		
-		for(int j = i+1; j < rows; j++){
-		
-			if(A[i][j] != 0){
-				return 0;
-			}
-		
-		}
-		
+    public static int solve(final int[][] A) {
 
-	
-	}
-	
-	return result;
-	
-	}	
-	
-	public static void main(String[] args){
-	
-	int[][] arr = new int[2][2];
-	arr[0][0]=0;
-	arr[0][1]=2;
-	arr[1][0]=0;
-	arr[1][1]=0;
-	
-	int result = solve(arr);
-	
-	System.out.println(result);
-	
-	}
+        int rows = A.length;
+
+        int result = 1;
+
+        for (int i = 0; i < rows; i++) {
+
+            for (int j = i + 1; j < rows; j++) {
+
+                if (A[i][j] != 0) {
+                    return 0;
+                }
+
+            }
+
+        }
+
+        return result;
+
+    }
+
+    public static void main(String[] args) {
+
+        int[][] arr = new int[2][2];
+        arr[0][0] = 0;
+        arr[0][1] = 2;
+        arr[1][0] = 0;
+        arr[1][1] = 0;
+
+        int result = solve(arr);
+
+        System.out.println(result);
+
+    }
 
 }
