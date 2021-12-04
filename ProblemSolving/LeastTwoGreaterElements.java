@@ -116,7 +116,7 @@ class LeastTwoGreaterElements {
         for (int num : arr)
             input.add(num);
 
-        ArrayList<Integer> result = solve(input);
+        // ArrayList<Integer> result = solve(input);
 
         // print(result);
     }
