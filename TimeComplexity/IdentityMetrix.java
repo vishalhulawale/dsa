@@ -56,40 +56,41 @@ Explanation 2:
  All the main diagonal elements in A are not 1, also all other elements are not equal to 0.
  So, A is not an identity matrix.
 */
+package TimeComplexity;
 
-class IdentityMetrix{
+class IdentityMetrix {
 
-	public static int solve(final int[][] A) {
-	
-	int rows = A.length;
-	
-	int result = 1;
-	
-	for (int i = 0; i < rows; i++){
-		
-		if(A[i][i] != 1){
-			result = 0;
-			break;
-		}
-	
-	}
-	
-	return result;
-	
-	}	
-	
-	public static void main(String[] args){
-	
-	int[][] arr = new int[2][2];
-	arr[0][0]=1;
-	arr[0][1]=0;
-	arr[1][0]=0;
-	arr[1][1]=1;
-	
-	int result = solve(arr);
-	
-	System.out.println(result);
-	
-	}
+    public static int solve(final int[][] A) {
+
+        int rows = A.length;
+
+        int result = 1;
+
+        for (int i = 0; i < rows; i++) {
+
+            if (A[i][i] != 1) {
+                result = 0;
+                break;
+            }
+
+        }
+
+        return result;
+
+    }
+
+    public static void main(String[] args) {
+
+        int[][] arr = new int[2][2];
+        arr[0][0] = 1;
+        arr[0][1] = 0;
+        arr[1][0] = 0;
+        arr[1][1] = 1;
+
+        int result = solve(arr);
+
+        System.out.println(result);
+
+    }
 
 }
