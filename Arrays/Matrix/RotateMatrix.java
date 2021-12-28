@@ -70,19 +70,35 @@ package Arrays;
 
 class RotateMatrix {
 
+    private static void transpose(int[][] A) {
+        for (int i = 0; i < A.length; i++) {
+
+            for (int j = 0; j <= i; j++) {
+                int temp = A[i][j];
+                A[i][j] = A[j][i];
+                A[j][i] = temp;
+            }
+
+        }
+    }
+
     private static int[][] solve(int[][] A) {
         int N = A.length;
 
-        int[][] B = new int[N][N];
+        transpose(A);
 
         for (int i = 0; i < N; i++) {
 
-            for (int j = 0; j < N; j++) {
-                B[j][N - i - 1] = A[i][j];
+            for (int j = 0; j < (N / 2); j++) {
+
+                int temp = A[i][j];
+                A[i][j] = A[i][N - j - 1];
+                A[i][N - j - 1] = temp;
+
             }
         }
 
-        return B;
+        return A;
     }
 
     public static void main(String[] args) {
