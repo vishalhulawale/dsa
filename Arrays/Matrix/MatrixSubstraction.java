@@ -47,7 +47,7 @@ Output 2:
 
  [[-1, -2]]
  */
-package Arrays;
+package Arrays.Matrix;
 
 class MatrixSubstraction {
 

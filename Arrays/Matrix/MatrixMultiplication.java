@@ -56,7 +56,7 @@ Explanation 2:
 
  [[1, 1]].[[2, 3]] = [[1 * 2 + 1 * 3]] = [[5]]
  */
-package Arrays;
+package Arrays.Matrix;
 
 public class MatrixMultiplication {
     public static int[][] solve(int[][] A, int[][] B) {

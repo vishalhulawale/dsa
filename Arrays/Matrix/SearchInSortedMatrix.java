@@ -42,7 +42,7 @@ A[1][2]= 2
 1*1009 + 2 =1011
 */
 
-package Arrays;
+package Arrays.Matrix;
 
 public class SearchInSortedMatrix {
 
@@ -76,7 +76,8 @@ public class SearchInSortedMatrix {
 
     public static void main(String[] args) {
         int[][] A = {
-                { 75, 81, 83, 92, 97, 102, 105, 112, 113, 118, 121, 123, 127, 130, 133, 134, 136, 139, 141, 142, 146, 151, 154, 157, 159, 162, 167, 168, 171, 174, 179, 181, 183},
+                { 75, 81, 83, 92, 97, 102, 105, 112, 113, 118, 121, 123, 127, 130, 133, 134, 136, 139, 141, 142, 146,
+                        151, 154, 157, 159, 162, 167, 168, 171, 174, 179, 181, 183 },
         };
 
         System.out.println(solve(A, 2));

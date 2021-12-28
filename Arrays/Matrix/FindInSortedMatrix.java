@@ -41,7 +41,7 @@ Example Explanation
 A[1][2]= 2
 1*1009 + 2 =1011
 */
-package Arrays;
+package Arrays.Matrix;
 
 public class FindInSortedMatrix {
     public static int solve(int[][] A, int B) {

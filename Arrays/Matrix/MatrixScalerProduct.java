@@ -18,7 +18,7 @@ Problem Constraints
 
 
 Input Format
-First argument is vecotor of vector of integers A representing matrix.
+First argument is vector of vector of integers A representing matrix.
 
 Second argument is an integer B.
 
@@ -49,7 +49,7 @@ Explanation 1:
 ==> [[2*1, 2*2, 2*3],[2*4, 2*5, 2*6],[2*7, 2*8, 2*9]]
 ==> [[2, 4, 6], [8, 10, 12], [14, 16, 18]]
 */
-package Arrays;
+package Arrays.Matrix;
 
 class MatrixScalerProduct {
 
