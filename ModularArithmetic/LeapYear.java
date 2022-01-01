@@ -51,7 +51,7 @@ Explanation 2:
 
  1999 is not a leap year.
 */
-package Maths;
+package ModularArithmetic;
 
 class LeapYear {
 
