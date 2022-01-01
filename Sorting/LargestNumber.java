@@ -63,17 +63,22 @@ class NumberComparator implements Comparator<Integer> {
 
     @Override
     public int compare(Integer arg0, Integer arg1) {
-        int permutation1 = Integer.parseInt((arg0 + "" + arg1));
-        int permutation2 = Integer.parseInt((arg1 + "" + arg0));
+        String permutation1 = arg0 + "" + arg1;
+        String permutation2 = arg1 + "" + arg0;
 
-        if (permutation1 < permutation2)
-            return 1;
-        else
-            return -1;
+        return permutation2.compareTo(permutation1);
     }
 }
 
 public class LargestNumber {
+
+    private static boolean checkIfAllZeros(StringBuilder str) {
+        for (int i = 0; i < str.length(); i++)
+            if (str.charAt(i) != '0')
+                return false;
+
+        return true;
+    }
 
     private static String solve(ArrayList<Integer> A) {
         StringBuilder ans = new StringBuilder();
@@ -82,6 +87,9 @@ public class LargestNumber {
 
         for (int i = 0; i < A.size(); i++)
             ans.append(A.get(i));
+
+        if (checkIfAllZeros(ans))
+            return "0";
 
         return ans.toString();
     }
