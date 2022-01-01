@@ -1,1 +1,1 @@
-find . -name "*.bak" -type f -delete
+find . -name "*.class" -type f -delete
