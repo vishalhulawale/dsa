@@ -51,22 +51,19 @@ package ModularArithmetic;
 
 public class ModStringV2 {
 
-    public static int solve(String A, int B) {
-        long ans = 0;
+    public static long solve(String A, int B) {
+        long ans = 0, exp = 1;
+        int N = A.length();
 
-        int n = A.length(), exp = 1;
-
-        for (int i = n - 1; i >= 0; i--) {
-
+        for (int i = N - 1; i >= 0; i--) {
             int digit = Character.getNumericValue(A.charAt(i));
 
-            ans = (ans + (digit % B * exp)) % B;
+            ans += ((digit % B) * (exp % B)) % B;
 
             exp = (exp * 10) % B;
-
         }
 
-        return (int) ans;
+        return ans % B;
     }
 
     public static void main(String[] args) {
