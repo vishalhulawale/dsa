@@ -1,7 +1,8 @@
 /*
 Search in a row wise and column wise sorted matrix
-Problem Description
 
+
+Problem Description
 Given a matrix of integers A of size N x M and an integer B.
 In the given matrix every row and column is sorted in increasing order. Find and return the position of B in the matrix in the given form:
 If A[i][j] = B then return (i * 1009 + j)
@@ -41,6 +42,7 @@ Example Explanation
 A[1][2]= 2
 1*1009 + 2 =1011
 */
+
 package Arrays.Matrix;
 
 public class FindInSortedMatrix {
