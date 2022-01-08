@@ -53,6 +53,8 @@ Explanation 2:
 
  There is no repeating element, output -1
 */
+package Hashing;
+
 import java.util.HashMap;
 import java.util.Map;
 
