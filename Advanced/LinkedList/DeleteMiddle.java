@@ -12,17 +12,21 @@ If the input linked list has 1 node, then this node should be deleted and a null
 Input Format
 The only argument given is the node pointing to the head node of the linked list
 */
+package Advanced.LinkedList;
 
 class ListNode {
     public int val;
     public ListNode next;
-    ListNode(int x) { val = x; next = null; }
+
+    ListNode(int x) {
+        val = x;
+        next = null;
+    }
 }
 
-
-public class DeleteMiddle {   
-    public static ListNode solve(ListNode A) {        
-        if(A == null || A.next == null){
+public class DeleteMiddle {
+    public static ListNode solve(ListNode A) {
+        if (A == null || A.next == null) {
             return null;
         }
 
@@ -30,7 +34,7 @@ public class DeleteMiddle {
         ListNode fastPtr = A;
         ListNode prevNode = null;
 
-        while(fastPtr != null && fastPtr.next != null){
+        while (fastPtr != null && fastPtr.next != null) {
             prevNode = curNode;
             curNode = curNode.next;
             fastPtr = fastPtr.next.next;
@@ -41,7 +45,7 @@ public class DeleteMiddle {
         return A;
     }
 
-    public static void main(String[] args) {        
+    public static void main(String[] args) {
         ListNode zero = new ListNode(1);
         ListNode one = new ListNode(2);
         ListNode two = new ListNode(3);
@@ -52,11 +56,11 @@ public class DeleteMiddle {
         one.next = two;
         two.next = three;
         three.next = four;
-        
+
         ListNode head = solve(zero);
-        while (head!=null) {
+        while (head != null) {
             System.out.println(head.val);
             head = head.next;
-        }    
-    }    
+        }
+    }
 }
