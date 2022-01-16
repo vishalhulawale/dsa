@@ -69,7 +69,7 @@ public class ReverseWords {
         int n = A.length();
         StringBuilder sb = new StringBuilder(A);
 
-        // Reverse wholse string
+        // Reverse whole string
         reverse(sb, 0, n - 1);
 
         int si = 0, ei = 0;
@@ -86,12 +86,30 @@ public class ReverseWords {
             ei++;
         }
 
+        // Remove all spaces that are coming after one space
+        int i = sb.length() - 1;
+        while (i > 0) {
+            if (sb.charAt(i - 1) == ' ' && sb.charAt(i) == ' ')
+                sb.deleteCharAt(i);
+
+            i--;
+        }
+
+        // Remove if one space is left at first position
+        if (sb.charAt(0) == ' ')
+            sb.deleteCharAt(0);
+
+        // Remove if one space is left at last position
+        int lastIndex = sb.length() - 1;
+        if (sb.charAt(lastIndex) == ' ')
+            sb.deleteCharAt(lastIndex);
+
         return sb.toString();
     }
 
     public static void main(String[] args) {
 
-        System.out.println(solve("the sky is blue"));
+        System.out.println("\"" + solve("    the    sky    is    blue   ") + "\"");
 
     }
 
