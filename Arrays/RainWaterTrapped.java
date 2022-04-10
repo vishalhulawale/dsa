@@ -41,7 +41,7 @@ Explanation 2:
 No water is trapped.
 */
 
-package Advanced.Arrays;
+package Arrays;
 
 public class RainWaterTrapped {
 

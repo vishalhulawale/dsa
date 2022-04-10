@@ -45,7 +45,7 @@ The target value is present at index 2.
 Explanation 2:
 The target value is present at index 0.
 */
-package Advanced.Searching;
+package Searching;
 
 public class InsertPosition {
 

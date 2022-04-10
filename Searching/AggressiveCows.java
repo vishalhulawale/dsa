@@ -47,7 +47,7 @@ Explanation 2:
 The minimum distance will be 1.
 */
 
-package Advanced.Searching;
+package Searching;
 
 public class AggressiveCows {
 

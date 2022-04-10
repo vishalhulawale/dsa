@@ -63,7 +63,7 @@ and painter 4 paints block 4, time taken = max(1, 8, 11, 3) = 11
 ans = 11 % 10000003
 */
 
-package Advanced.Searching;
+package Searching;
 
 public class PainterProblem {
 

@@ -49,7 +49,7 @@ Explanation 2:
 There is no occurence of 3 in the array.
 */
 
-package Advanced.Searching;
+package Searching;
 
 public class SearchRange {
 

@@ -46,7 +46,7 @@ Explanation 1:
 Explanation 2:
 2nd element after sorting is 2.
 */
-package Advanced.Sorting;
+package Sorting;
 
 class KthSmallestElement {
 

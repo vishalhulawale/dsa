@@ -32,7 +32,7 @@ Explaination1:
 11 is represented as 1011 in binary.
 */
 
-package Advanced.BitManipulation;
+package BitManipulation;
 
 class SetBitCounter {
     public static int numSetBits(int A) {

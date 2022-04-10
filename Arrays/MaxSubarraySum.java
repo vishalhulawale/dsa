@@ -41,7 +41,7 @@ Explanation 2:
 The subarray [4,-1,2,1] has the maximum possible sum of 6. 
 */
 
-package Advanced.Arrays;
+package Arrays;
 
 public class MaxSubarraySum {
 

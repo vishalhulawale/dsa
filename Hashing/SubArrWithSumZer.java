@@ -43,7 +43,7 @@ Explanation 2:
 The array has sum 0.
 */
 
-package Advanced.Hashing;
+package Hashing;
 
 import java.util.HashSet;
 

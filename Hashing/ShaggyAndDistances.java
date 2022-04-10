@@ -43,7 +43,7 @@ Explanation 2:
 Only possibility is choosing A[1] and A[2].
 */
 
-package Advanced.Hashing;
+package Hashing;
 
 import java.util.HashMap;
 

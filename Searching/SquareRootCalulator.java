@@ -42,7 +42,7 @@ When A = 11 , square root of A = 3.316. It is not a perfect square so we return 
 When A = 9 which is a perfect square of 3, so we return 3.
 */
 
-package Advanced.Searching;
+package Searching;
 
 public class SquareRootCalulator {
     public static int sqrt(int A) {

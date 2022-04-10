@@ -43,7 +43,7 @@ Explanation 2:
 Element 4 is missing, so we return 0.
 */
 
-package Advanced.Sorting;
+package Sorting;
 
 import java.util.HashSet;
 

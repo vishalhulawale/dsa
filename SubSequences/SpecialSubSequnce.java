@@ -43,7 +43,7 @@ Explanation 2:
 There is no subsequence "AG" in the given string.
 */
 
-package Advanced.SubSequences;
+package SubSequences;
 
 public class SpecialSubSequnce {
     public static int solve(String A) {

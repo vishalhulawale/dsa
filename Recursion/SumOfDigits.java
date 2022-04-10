@@ -2,15 +2,15 @@
 Sum of Digits!
 
 Problem Description
-Given a number A, we need to find sum of its digits using recursion.
+Given a number A, we need to find the sum of its digits using recursion.
 
 
 Problem Constraints
-1 <= A <= 109
+1 <= A <= 10^9
 
 
 Input Format
-First and only argument is an integer A.
+The first and only argument is an integer A.
 
 
 Output Format
@@ -46,19 +46,16 @@ package Recursion;
 public class SumOfDigits {
 
     public static int solve(int A) {
-
-        // Base condition
         if (A < 10)
             return A;
 
-        // Main logic
         int digit = A % 10;
-        return digit + solve(A / 10);
 
+        return solve(A / 10) + digit;
     }
 
     public static void main(String[] args) {
-        System.out.println(solve(11));
+        System.out.println(solve(11222));
     }
 
 }

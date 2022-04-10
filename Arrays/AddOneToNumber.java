@@ -40,7 +40,7 @@ Given vector is [1, 2, 3].
 The returned vector should be [1, 2, 4] as 123 + 1 = 124.
 */
 
-package Advanced.Arrays;
+package Arrays;
 
 import java.util.ArrayList;
 

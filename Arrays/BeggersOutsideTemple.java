@@ -20,7 +20,7 @@ Explanation:
 => Third devotee donated 25 coins to beggars ranging from 2 to 5. Final amount in each beggars pot after third devotee: [10, 55, 45, 25, 25]
 */
 
-package Advanced.Arrays;
+package Arrays;
 
 class BeggersOutsideTemple {
 

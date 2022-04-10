@@ -1,5 +1,5 @@
 /*
-Find Fibonacci
+Find Fibonacci - II
 
 Problem Description
 The Fibonacci numbers are the numbers in the following integer sequence.
@@ -42,7 +42,6 @@ Example Explanation
 Explanation 1:
 f(2) = f(1) + f(0) = 1
 
-
 Explanation 2:
 f(9) = f(8) + f(7) = 21 + 13  = 34
 */
@@ -52,17 +51,14 @@ package Recursion;
 public class Fibonacci {
 
     public static int findAthFibonacci(int A) {
-
         if (A == 0 || A == 1)
             return A;
 
         return findAthFibonacci(A - 1) + findAthFibonacci(A - 2);
-
     }
 
     public static void main(String[] args) {
-
+        System.out.println(findAthFibonacci(2));
         System.out.println(findAthFibonacci(9));
-
     }
 }

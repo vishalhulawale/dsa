@@ -44,7 +44,7 @@ Explanation 2:
 Merging A and B produces the output as described above.
 */
 
-package Advanced.Sorting;
+package Sorting;
 
 public class MergeSortedArrays {
 

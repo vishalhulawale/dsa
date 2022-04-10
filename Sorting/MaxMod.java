@@ -45,7 +45,7 @@ No pair exists which has more value than 3.
 Explanation 2:
 For i = 2, j = 1  A[i] % A[j] = 4 % 6 = 4.
 */
-package Advanced.Sorting;
+package Sorting;
 
 public class MaxMod {
     public static int solve(int[] A) {
@@ -56,8 +56,8 @@ public class MaxMod {
             if (num > max) {
                 secondMax = max;
                 max = num;
-            } 
-            
+            }
+
             if (num < max && num > secondMax) {
                 secondMax = num;
             }
@@ -67,7 +67,7 @@ public class MaxMod {
     }
 
     public static void main(String[] args) {
-        int[] A = { 5,5,5,5 };
+        int[] A = { 5, 5, 5, 5 };
         System.out.println(solve(A));
     }
 }

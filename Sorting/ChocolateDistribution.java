@@ -42,7 +42,7 @@ Minimum Difference is 6
 The set goes like 3,4,7,9,9 and the output is 9-3 = 6
 */
 
-package Advanced.Sorting;
+package Sorting;
 
 import java.util.Arrays;
 

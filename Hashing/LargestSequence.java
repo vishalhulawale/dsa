@@ -29,7 +29,7 @@ Example Output
 Example Explanation
 [2,-2,4,-4] is the longest sequence with total sum of zero.
 */
-package Advanced.Hashing;
+package Hashing;
 
 import java.util.HashMap;
 

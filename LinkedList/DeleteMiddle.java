@@ -12,7 +12,7 @@ If the input linked list has 1 node, then this node should be deleted and a null
 Input Format
 The only argument given is the node pointing to the head node of the linked list
 */
-package Advanced.LinkedList;
+package LinkedList;
 
 class ListNode {
     public int val;

@@ -45,7 +45,7 @@ Explanation 2:
 1 divides both 6 and 7
 */
 
-package Advanced.Maths;
+package Maths;
 
 public class GCD {
 

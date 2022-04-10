@@ -15,7 +15,7 @@ Output : 2
 2^3 % 3 = 8 % 3 = 2.
 */
 
-package Advanced.Recursion;
+package Recursion;
 
 public class PowerFunction {
 

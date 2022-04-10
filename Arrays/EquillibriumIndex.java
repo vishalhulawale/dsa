@@ -44,7 +44,7 @@ Explanation 1:
 There is no such index.
 */
 
-package Advanced.Arrays;
+package Arrays;
 
 public class EquillibriumIndex {
 

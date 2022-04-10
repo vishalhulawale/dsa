@@ -1,4 +1,4 @@
-package Advanced.StringManipulation;
+package StringManipulation;
 
 /*
 Count A
