@@ -68,14 +68,12 @@ class ReverseString {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        try (in) {
             String word = in.next();
 
             ReverseString r1 = new ReverseString();
             System.out.println(r1.solve(word));
 
             in.close();
-        }
 
     }
 
