@@ -14,16 +14,6 @@ The only argument given is the node pointing to the head node of the linked list
 */
 package LinkedList;
 
-class ListNode {
-    public int val;
-    public ListNode next;
-
-    ListNode(int x) {
-        val = x;
-        next = null;
-    }
-}
-
 public class DeleteMiddle {
     public static ListNode solve(ListNode A) {
         if (A == null || A.next == null) {
