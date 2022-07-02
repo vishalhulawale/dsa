@@ -9,9 +9,9 @@ Given an array of integers A of length N, you have to calculate its Primal Power
 
 
 Problem Constraints
-1 <= N <= 103
+1 <= N <= 10^3
 
--106 <= A[i] <= 106
+-10^6 <= A[i] <= 10^6
 
 
 

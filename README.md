@@ -32,6 +32,7 @@ Data structures and Algorithms implemented using java.
 - [How we can have larger bit numbers in lower bit processors](https://stackoverflow.com/questions/23038451/how-does-a-32-bit-processor-support-64-bit-integers#:~:text=If%20a%2032%2Dbit%20integer,bits%20to%20store%20the%20answer)
 - [Why 1 byte = 8 bits](https://www.quora.com/Why-is-one-byte-formed-by-8-bits)
 - Right shift on negative numbers
+- Proof of 2's complement
 
 ## Time Complexity
 ### References
@@ -44,3 +45,24 @@ https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesn
 
 
 
+## Arrays
+### References
+- [Arrays](https://www.interviewbit.com/courses/programming/arrays)
+- [Java (ArrayList)](https://www.w3schools.com/java/java_arraylist.asp)
+
+### Questions
+1. [Good Pair](https://github.com/vishalhulawale/dsa/blob/e304322f144896d098a4176d3dbabe6a6676e9b4/Arrays/GoodPair.java#L69-L70)
+1. [Multiple left rotations of the array](https://github.com/vishalhulawale/dsa/blob/a575a5c22194833c3f8b53ae669c6ce1e7fcd4e1/Arrays/MultipleLeftRotation.java#L73-L74)
+1. [Noble Integer](https://github.com/vishalhulawale/dsa/blob/a575a5c22194833c3f8b53ae669c6ce1e7fcd4e1/Arrays/NobleInteger.java#L47-L48)
+1. [Time to equality](https://github.com/vishalhulawale/dsa/blob/489aed6a6e1e54d13f593204d1304743a1f51a86/Arrays/TimeToEqulify.java#L34-L35)
+1. [Rotation Game](https://github.com/vishalhulawale/dsa/blob/489aed6a6e1e54d13f593204d1304743a1f51a86/Arrays/RotationGame.java#L61-L62)
+1. [FizzBuzz](https://github.com/vishalhulawale/dsa/blob/e304322f144896d098a4176d3dbabe6a6676e9b4/Arrays/FizzBuzz.java#L43-L44)
+1. [Leaders in an array](https://github.com/vishalhulawale/dsa/blob/e304322f144896d098a4176d3dbabe6a6676e9b4/Arrays/LeaderInArray.java#L61-L62)
+1. [Reverse the Array](https://github.com/vishalhulawale/dsa/blob/014ae32a27d1f390fc0a280119bfa5142189ab72/Arrays/ReverseArray.java#L54-L55)
+1. [Subarray with least average](https://github.com/vishalhulawale/dsa/blob/dc7a5615346ee5e77e9748d9430da78750766b3b/Arrays/LeastAverageSubArray.java#L51-L52)
+1. [Max Sum Contiguous Subarray](https://github.com/vishalhulawale/dsa/blob/fbdba3e9d8a7f7d39f99053890c3e7ccf85acc4e/Arrays/MaxSumSubarray.java#L51-L52)
+1. [Copy the Array](https://github.com/vishalhulawale/dsa/blob/e304322f144896d098a4176d3dbabe6a6676e9b4/Arrays/CopyArray.java#L60-L61)
+1. [Max Min](https://github.com/vishalhulawale/dsa/blob/6c540781755ab9a1f271acc871e8838d672d66cc/Arrays/MaxMin.java#L55-L56)
+1. [Multiplication of previous and next](https://github.com/vishalhulawale/dsa/blob/014ae32a27d1f390fc0a280119bfa5142189ab72/Arrays/PrevNextMultiplication.java#L29-L30)
+1. [MAX - MIN](https://github.com/vishalhulawale/dsa/blob/a575a5c22194833c3f8b53ae669c6ce1e7fcd4e1/Arrays/NthMinMaxDifference.java#L31-L32)
+1. [Primal Power](https://github.com/vishalhulawale/dsa/blob/014ae32a27d1f390fc0a280119bfa5142189ab72/Arrays/PrimalPower.java#L56-L57)
