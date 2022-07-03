@@ -83,9 +83,14 @@ class RotationGame {
 
     public static int[] rotate(int[] A, int B) {
         int size = A.length;
-
         int cnt = B % size;
 
+        // If cnt is 0 then skip rotatation
+        if (cnt == 0) {
+            return A;
+        }
+
+        // Reverse entire array, reverse first cnt elemnts and then reverse remaining (size-cnt) elements
         reverse(A, 0, size - 1);
         reverse(A, 0, cnt - 1);
         reverse(A, cnt, size - 1);
