@@ -15,12 +15,12 @@ Data structures and Algorithms implemented using java.
 
 ## Bit Manipulation
 ### Questions
-1. [Number of 1 Bits](https://github.com/vishalhulawale/dsa/blob/6b7d6b644e4dec832291f13616927ae7ebdc545a/BitManipulation/NumberOf1Bits.java#L34-L35)
-1. [Single Number](https://github.com/vishalhulawale/dsa/blob/5d021f7e2bc4b16d22df3d2c0816f576c730ac7d/BitManipulation/SingleNumber.java#L53)
-1. [Add Binary Strings](https://github.com/vishalhulawale/dsa/blob/6b7d6b644e4dec832291f13616927ae7ebdc545a/BitManipulation/BinaryStringAdder.java#L13-L14)
-1. [Two Single Numbers](https://github.com/vishalhulawale/dsa/blob/5d021f7e2bc4b16d22df3d2c0816f576c730ac7d/BitManipulation/TwoSingleNumbers.java#L55-L56)
-1. [Smallest XOR](https://github.com/vishalhulawale/dsa/blob/3bcc23b980f994a115d44558b7d19a8724208032/BitManipulation/SmallestXOR.java#L45)
-1. [Reverse Bits](https://github.com/vishalhulawale/dsa/blob/6b7d6b644e4dec832291f13616927ae7ebdc545a/BitManipulation/ReverseBits.java#L41-L42)
+1. [Number of 1 Bits](https://github.com/vishalhulawale/dsa/blob/6b7d6b644e4dec832291f13616927ae7ebdc545a/BitManipulation/NumberOf1Bits.java)
+1. [Single Number](https://github.com/vishalhulawale/dsa/blob/5d021f7e2bc4b16d22df3d2c0816f576c730ac7d/BitManipulation/SingleNumber.java)
+1. [Add Binary Strings](https://github.com/vishalhulawale/dsa/blob/6b7d6b644e4dec832291f13616927ae7ebdc545a/BitManipulation/BinaryStringAdder.java)
+1. [Two Single Numbers](https://github.com/vishalhulawale/dsa/blob/5d021f7e2bc4b16d22df3d2c0816f576c730ac7d/BitManipulation/TwoSingleNumbers.java)
+1. [Smallest XOR](https://github.com/vishalhulawale/dsa/blob/3bcc23b980f994a115d44558b7d19a8724208032/BitManipulation/SmallestXOR.java)
+1. [Reverse Bits](https://github.com/vishalhulawale/dsa/blob/6b7d6b644e4dec832291f13616927ae7ebdc545a/BitManipulation/ReverseBits.java)
 
 ### References
 - [Understanding log](https://www.mathsisfun.com/algebra/logarithms.html)
@@ -51,18 +51,22 @@ https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesn
 - [Java (ArrayList)](https://www.w3schools.com/java/java_arraylist.asp)
 
 ### Questions
-1. [Good Pair](https://github.com/vishalhulawale/dsa/blob/e304322f144896d098a4176d3dbabe6a6676e9b4/Arrays/GoodPair.java#L69-L70)
-1. [Multiple left rotations of the array](https://github.com/vishalhulawale/dsa/blob/a575a5c22194833c3f8b53ae669c6ce1e7fcd4e1/Arrays/MultipleLeftRotation.java#L73-L74)
-1. [Noble Integer](https://github.com/vishalhulawale/dsa/blob/a575a5c22194833c3f8b53ae669c6ce1e7fcd4e1/Arrays/NobleInteger.java#L47-L48)
-1. [Time to equality](https://github.com/vishalhulawale/dsa/blob/489aed6a6e1e54d13f593204d1304743a1f51a86/Arrays/TimeToEqulify.java#L34-L35)
-1. [Rotation Game](https://github.com/vishalhulawale/dsa/blob/489aed6a6e1e54d13f593204d1304743a1f51a86/Arrays/RotationGame.java#L61-L62)
-1. [FizzBuzz](https://github.com/vishalhulawale/dsa/blob/e304322f144896d098a4176d3dbabe6a6676e9b4/Arrays/FizzBuzz.java#L43-L44)
-1. [Leaders in an array](https://github.com/vishalhulawale/dsa/blob/e304322f144896d098a4176d3dbabe6a6676e9b4/Arrays/LeaderInArray.java#L61-L62)
-1. [Reverse the Array](https://github.com/vishalhulawale/dsa/blob/014ae32a27d1f390fc0a280119bfa5142189ab72/Arrays/ReverseArray.java#L54-L55)
-1. [Subarray with least average](https://github.com/vishalhulawale/dsa/blob/dc7a5615346ee5e77e9748d9430da78750766b3b/Arrays/LeastAverageSubArray.java#L51-L52)
-1. [Max Sum Contiguous Subarray](https://github.com/vishalhulawale/dsa/blob/fbdba3e9d8a7f7d39f99053890c3e7ccf85acc4e/Arrays/MaxSumSubarray.java#L51-L52)
-1. [Copy the Array](https://github.com/vishalhulawale/dsa/blob/e304322f144896d098a4176d3dbabe6a6676e9b4/Arrays/CopyArray.java#L60-L61)
-1. [Max Min](https://github.com/vishalhulawale/dsa/blob/6c540781755ab9a1f271acc871e8838d672d66cc/Arrays/MaxMin.java#L55-L56)
-1. [Multiplication of previous and next](https://github.com/vishalhulawale/dsa/blob/014ae32a27d1f390fc0a280119bfa5142189ab72/Arrays/PrevNextMultiplication.java#L29-L30)
-1. [MAX - MIN](https://github.com/vishalhulawale/dsa/blob/a575a5c22194833c3f8b53ae669c6ce1e7fcd4e1/Arrays/NthMinMaxDifference.java#L31-L32)
-1. [Primal Power](https://github.com/vishalhulawale/dsa/blob/014ae32a27d1f390fc0a280119bfa5142189ab72/Arrays/PrimalPower.java#L56-L57)
+1. [Good Pair](https://github.com/vishalhulawale/dsa/blob/e304322f144896d098a4176d3dbabe6a6676e9b4/Arrays/GoodPair.java)
+1. [Noble Integer](https://github.com/vishalhulawale/dsa/blob/a575a5c22194833c3f8b53ae669c6ce1e7fcd4e1/Arrays/NobleInteger.java)
+1. [Time to equality](https://github.com/vishalhulawale/dsa/blob/489aed6a6e1e54d13f593204d1304743a1f51a86/Arrays/TimeToEqulify.java)
+1. [FizzBuzz](https://github.com/vishalhulawale/dsa/blob/e304322f144896d098a4176d3dbabe6a6676e9b4/Arrays/FizzBuzz.java)
+1. [Leaders in an array](https://github.com/vishalhulawale/dsa/blob/e304322f144896d098a4176d3dbabe6a6676e9b4/Arrays/LeaderInArray.java)
+1. [Reverse the Array](https://github.com/vishalhulawale/dsa/blob/014ae32a27d1f390fc0a280119bfa5142189ab72/Arrays/ReverseArray.java)
+1. [Copy the Array](https://github.com/vishalhulawale/dsa/blob/e304322f144896d098a4176d3dbabe6a6676e9b4/Arrays/CopyArray.java)
+1. [Max Min](https://github.com/vishalhulawale/dsa/blob/6c540781755ab9a1f271acc871e8838d672d66cc/Arrays/MaxMin.java)
+1. [Multiplication of previous and next](https://github.com/vishalhulawale/dsa/blob/014ae32a27d1f390fc0a280119bfa5142189ab72/Arrays/PrevNextMultiplication.java)
+1. [MAX - MIN](https://github.com/vishalhulawale/dsa/blob/a575a5c22194833c3f8b53ae669c6ce1e7fcd4e1/Arrays/NthMinMaxDifference.java)
+1. [Primal Power](https://github.com/vishalhulawale/dsa/blob/014ae32a27d1f390fc0a280119bfa5142189ab72/Arrays/PrimalPower.java)
+
+## Subarrays
+### Questions
+1. [Multiple left rotations of the array](https://github.com/vishalhulawale/dsa/blob/a575a5c22194833c3f8b53ae669c6ce1e7fcd4e1/Arrays/MultipleLeftRotation.java)
+1. [Rotation Game](https://github.com/vishalhulawale/dsa/blob/2e62354955dea70fb94da40f14d2f8bb4df7062f/Arrays/RotationGame.java)
+1. [Subarray with least average](https://github.com/vishalhulawale/dsa/blob/dc7a5615346ee5e77e9748d9430da78750766b3b/Arrays/LeastAverageSubArray.java)
+1. [Max Sum Contiguous Subarray](https://github.com/vishalhulawale/dsa/blob/fbdba3e9d8a7f7d39f99053890c3e7ccf85acc4e/Arrays/MaxSumSubarray.java)
+1. [Sum of All Subarrays](https://github.com/vishalhulawale/dsa/blob/49e55cdc8e5e17be0ae6e7e2098a5c80c3ed4796/Arrays/SumOfAllSubArrays.java)
