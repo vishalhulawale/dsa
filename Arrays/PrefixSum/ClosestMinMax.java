@@ -55,46 +55,36 @@ package Arrays.PrefixSum;
 class ClosestMinMax {
 
     private static int solve(int[] A) {
-
         int min = A[0], max = A[0];
 
         for (int i = 1; i < A.length; i++) {
-
-            if (A[i] < min)
-                min = A[i];
-
-            if (A[i] > max)
-                max = A[i];
-
+            min = Math.min(min, A[i]);
+            max = Math.max(max, A[i]);
         }
 
         int min_index = -1, max_index = -1, res = Integer.MAX_VALUE;
 
         for (int i = 0; i < A.length; i++) {
-
             if (A[i] == min) {
-                if (max_index != -1)
-                    res = Math.min(res, i - max_index + 1);
                 min_index = i;
             }
 
             if (A[i] == max) {
-                if (min_index != -1)
-                    res = Math.min(res, i - min_index + 1);
                 max_index = i;
             }
 
+            if (min_index != -1 && max_index != -1) {
+                int subArrSize = Math.abs(max_index - min_index) + 1;
+                res = Math.min(res, subArrSize);
+            }
         }
 
         return res;
     }
 
     public static void main(String[] args) {
-
         int[] A = { 3, 5, 2, 5, 4, 1, 3 };
-
         System.out.println(solve(A));
-
     }
 
 }
