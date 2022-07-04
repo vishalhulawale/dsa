@@ -9,7 +9,7 @@ Given an array of integers A, find and return the minimum value of | A [ i ] - A
 Problem Constraints
 1 <= length of the array <= 100000
 
--109 <= A[i] <= 109
+-10^9 <= A[i] <= 10^9
 
 
 
