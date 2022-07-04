@@ -9,8 +9,8 @@ If X and Y are two matrices of the same order (same dimensions). Then X - Y is a
 
 
 Problem Constraints
-1 <= N, M <= 103
--109 <= A[i][j], B[i][j] <= 109
+1 <= N, M <= 10^3
+-10^9 <= A[i][j], B[i][j] <= 10^9
 
 
 Input Format

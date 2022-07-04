@@ -7,7 +7,7 @@ You are given a N X N integer matrix. You have to find the sum of all the minor 
 Minor diagonal of a M X M matrix A is a collection of elements A[i, j] such that i + j = M + 1 (where i, j are 1-based).
 
 Problem Constraints
-1 <= N <= 103
+1 <= N <= 10^3
 
 -1000 <= A[i][j] <= 1000
 
