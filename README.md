@@ -80,3 +80,18 @@ https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesn
 1. [Minimum Absolute Difference](https://github.com/vishalhulawale/dsa/blob/2bec453b18e2c0f2d6737ff5f767e319d95d3da2/Arrays/MinimumAbsoluteDifference.java)
 1. [Xor queries](https://github.com/vishalhulawale/dsa/blob/b419960de4fcaa7ba06ff2f8652f69735c29ffb3/Arrays/XorQueries.java)
 1. [Count ways to make sum of odd and even indexed elements equal by removing an array element](https://github.com/vishalhulawale/dsa/blob/4d977aff84f03ba6cdb940f7908365bcb4adf640/Arrays/EqualEvenOddSum.java)
+
+## 2D Matrix
+### Questions
+1. [Matrix Subtraction](https://github.com/vishalhulawale/dsa/blob/d6f3150d4e2a864fff92f7ad8d5a792044c28288/Arrays/MatrixSubstraction.java)
+1. [Column Sum](https://github.com/vishalhulawale/dsa/blob/e304322f144896d098a4176d3dbabe6a6676e9b4/Arrays/ColumnSum.java)
+1. [Anti Diagonals](https://github.com/vishalhulawale/dsa/blob/d6f3150d4e2a864fff92f7ad8d5a792044c28288/Arrays/AntiDiagonals.java)
+1. [Add the matrices](https://github.com/vishalhulawale/dsa/blob/d6f3150d4e2a864fff92f7ad8d5a792044c28288/Arrays/MatrixSum.java)
+1. [Matrix Multiplication](https://github.com/vishalhulawale/dsa/blob/d6f3150d4e2a864fff92f7ad8d5a792044c28288/Arrays/MatrixMultiplication.java)
+1. [Matrix Transpose](https://github.com/vishalhulawale/dsa/blob/d6f3150d4e2a864fff92f7ad8d5a792044c28288/Arrays/MatrixTranspose.java)
+1. [Are Matrices Same ?](https://github.com/vishalhulawale/dsa/blob/0000000000000000000000000000000000000000:/Arrays/MatrixEquality.java)
+1. [Matrix Scaler Product](https://github.com/vishalhulawale/dsa/blob/d6f3150d4e2a864fff92f7ad8d5a792044c28288/Arrays/MatrixScalerProduct.java)
+1. [Row to Column Zero](https://github.com/vishalhulawale/dsa/blob/c4148a57dabda424ce96dda84d16bdc0aa2b634c/Arrays/RowToColumnZero.java)
+1. [Row Sum](https://github.com/vishalhulawale/dsa/blob/489aed6a6e1e54d13f593204d1304743a1f51a86/Arrays/RowSum.java)
+1. [Main Diagonal Sum](https://github.com/vishalhulawale/dsa/blob/e304322f144896d098a4176d3dbabe6a6676e9b4/Arrays/MainDiagonalSum.java)
+1. [Minor Diagonal Sum](https://github.com/vishalhulawale/dsa/blob/6c540781755ab9a1f271acc871e8838d672d66cc/Arrays/MinorDiagonalSum.java)
