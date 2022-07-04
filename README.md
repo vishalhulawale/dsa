@@ -77,3 +77,6 @@ https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesn
 1. [Pattern Printing -2](https://github.com/vishalhulawale/dsa/blob/0ae9217b1a1ea401f746c12606621066c83d3e04/Arrays/PrefixSum/PatternPrintReverse.java)
 1. [Equilibrium index of an array](https://github.com/vishalhulawale/dsa/blob/84a6f057486636ce853f0f6181e2c839c57e235c/Arrays/PrefixSum/EquilibriumIndex.java)
 1. [Arithmetic Progression](https://github.com/vishalhulawale/dsa/blob/4384e266910e4d13bdde9188b3a7e10b34902c3b/Arrays/PrefixSum/ArithmaticProgression.java)
+1. [Minimum Absolute Difference](https://github.com/vishalhulawale/dsa/blob/2bec453b18e2c0f2d6737ff5f767e319d95d3da2/Arrays/PrefixSum/MinimumAbsoluteDifference.java)
+1. [Xor queries](https://github.com/vishalhulawale/dsa/blob/b419960de4fcaa7ba06ff2f8652f69735c29ffb3/Arrays/PrefixSum/XorQueries.java)
+1. [Count ways to make sum of odd and even indexed elements equal by removing an array element](https://github.com/vishalhulawale/dsa/blob/4d977aff84f03ba6cdb940f7908365bcb4adf640/Arrays/EqualEvenOddSum.java#L49-L50)
