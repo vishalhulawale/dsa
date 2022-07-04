@@ -62,7 +62,7 @@ The second anti diagonal of the matrix is [2, 4 ], the rest spaces should be fil
 The third anti diagonal of the matrix is [3, 0, 0 ], the rest spaces should be filled with 0 making the row as [3, 0, 0].
 */
 
-package Arrays.Matrix;
+package Arrays;
 
 public class AntiDiagonals {
 

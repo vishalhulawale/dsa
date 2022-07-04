@@ -71,12 +71,12 @@ https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesn
 
 ## Array - Prefix sum and carry forward
 ### Questions
-1. [Closest MinMax](https://github.com/vishalhulawale/dsa/blob/735efa292cc692b8d044378524ea202ead7837ff/Arrays/PrefixSum/ClosestMinMax.java)
-1. [Special Subsequences "AG"](https://github.com/vishalhulawale/dsa/blob/08bcb85f24f24e8403aa2e193d04403d58fe3e6c/Arrays/PrefixSum/SubSequences.java)
-1. [Beggars Outside Temple](https://github.com/vishalhulawale/dsa/blob/5b2066c72fa94c7b2acd912843013e3dc7ecb23d/Arrays/PrefixSum/BeggersOutsideTemple.java)
-1. [Pattern Printing -2](https://github.com/vishalhulawale/dsa/blob/0ae9217b1a1ea401f746c12606621066c83d3e04/Arrays/PrefixSum/PatternPrintReverse.java)
-1. [Equilibrium index of an array](https://github.com/vishalhulawale/dsa/blob/84a6f057486636ce853f0f6181e2c839c57e235c/Arrays/PrefixSum/EquilibriumIndex.java)
-1. [Arithmetic Progression](https://github.com/vishalhulawale/dsa/blob/4384e266910e4d13bdde9188b3a7e10b34902c3b/Arrays/PrefixSum/ArithmaticProgression.java)
-1. [Minimum Absolute Difference](https://github.com/vishalhulawale/dsa/blob/2bec453b18e2c0f2d6737ff5f767e319d95d3da2/Arrays/PrefixSum/MinimumAbsoluteDifference.java)
-1. [Xor queries](https://github.com/vishalhulawale/dsa/blob/b419960de4fcaa7ba06ff2f8652f69735c29ffb3/Arrays/PrefixSum/XorQueries.java)
-1. [Count ways to make sum of odd and even indexed elements equal by removing an array element](https://github.com/vishalhulawale/dsa/blob/4d977aff84f03ba6cdb940f7908365bcb4adf640/Arrays/EqualEvenOddSum.java#L49-L50)
+1. [Closest MinMax](https://github.com/vishalhulawale/dsa/blob/735efa292cc692b8d044378524ea202ead7837ff/Arrays/ClosestMinMax.java)
+1. [Special Subsequences "AG"](https://github.com/vishalhulawale/dsa/blob/08bcb85f24f24e8403aa2e193d04403d58fe3e6c/Arrays/SubSequences.java)
+1. [Beggars Outside Temple](https://github.com/vishalhulawale/dsa/blob/5b2066c72fa94c7b2acd912843013e3dc7ecb23d/Arrays/BeggersOutsideTemple.java)
+1. [Pattern Printing -2](https://github.com/vishalhulawale/dsa/blob/0ae9217b1a1ea401f746c12606621066c83d3e04/Arrays/PatternPrintReverse.java)
+1. [Equilibrium index of an array](https://github.com/vishalhulawale/dsa/blob/84a6f057486636ce853f0f6181e2c839c57e235c/Arrays/EquilibriumIndex.java)
+1. [Arithmetic Progression](https://github.com/vishalhulawale/dsa/blob/4384e266910e4d13bdde9188b3a7e10b34902c3b/Arrays/ArithmaticProgression.java)
+1. [Minimum Absolute Difference](https://github.com/vishalhulawale/dsa/blob/2bec453b18e2c0f2d6737ff5f767e319d95d3da2/Arrays/MinimumAbsoluteDifference.java)
+1. [Xor queries](https://github.com/vishalhulawale/dsa/blob/b419960de4fcaa7ba06ff2f8652f69735c29ffb3/Arrays/XorQueries.java)
+1. [Count ways to make sum of odd and even indexed elements equal by removing an array element](https://github.com/vishalhulawale/dsa/blob/4d977aff84f03ba6cdb940f7908365bcb4adf640/Arrays/EqualEvenOddSum.java)

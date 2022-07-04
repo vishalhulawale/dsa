@@ -44,7 +44,7 @@ Explanation 2:
 There is no way to reorder the elements to obtain an arithmetic progression.
 */
 
-package Arrays.PrefixSum;
+package Arrays;
 
 import java.util.Arrays;
 

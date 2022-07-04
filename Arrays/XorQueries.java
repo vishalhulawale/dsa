@@ -40,7 +40,7 @@ For query 1 the range is (2,4), and the answer is (array[2] xor array[3] xor arr
 Similarly for other queries.
 */
 
-package Arrays.PrefixSum;
+package Arrays;
 
 public class XorQueries {
 

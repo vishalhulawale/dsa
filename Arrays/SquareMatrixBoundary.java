@@ -1,4 +1,4 @@
-package Arrays.Matrix;
+package Arrays;
 
 public class SquareMatrixBoundary {
 

@@ -50,7 +50,7 @@ Explanation 2:
  Take the whole array.
  */
 
-package Arrays.PrefixSum;
+package Arrays;
 
 class ClosestMinMax {
 

@@ -42,7 +42,7 @@ Explanation 1:
 Clearly after converting rows to column and columns to rows of [[1, 2, 3],[4, 5, 6],[7, 8, 9]] we will get [[1, 4, 7], [2, 5, 8], [3, 6, 9]].
 */
 
-package Arrays.Matrix;
+package Arrays;
 
 class MatrixTranspose {
     public static int[][] solve(int[][] A) {

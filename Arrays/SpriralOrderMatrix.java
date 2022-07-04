@@ -45,7 +45,7 @@ Explanation 2:
 4<--- 3
 */
 
-package Arrays.Matrix;
+package Arrays;
 
 public class SpriralOrderMatrix {
     private static int[][] solve(int A) {

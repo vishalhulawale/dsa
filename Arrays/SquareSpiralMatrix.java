@@ -1,4 +1,4 @@
-package Arrays.Matrix;
+package Arrays;
 
 public class SquareSpiralMatrix {
     public static int[] solve(int[][] A) {

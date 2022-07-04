@@ -56,7 +56,7 @@
  * Therefore, the required output is 3.
  */
 
-package Arrays.PrefixSum;
+package Arrays;
 
 class SpecialIndex {
 

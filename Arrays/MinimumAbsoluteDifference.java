@@ -50,7 +50,7 @@ Explanation 2:
  The minimum value is 6 (|11 - 5| or |17 - 11|).
 */
 
-package Arrays.PrefixSum;
+package Arrays;
 
 import java.util.Arrays;
 

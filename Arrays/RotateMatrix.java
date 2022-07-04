@@ -57,7 +57,7 @@ Explanation 2:
 2D array remains the same as there is only element.
 */
 
-package Arrays.Matrix;
+package Arrays;
 
 class RotateMatrix {
 

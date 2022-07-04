@@ -53,7 +53,7 @@ Explanation 1:
 
 There is no such index.
 */
-package Arrays.PrefixSum;
+package Arrays;
 
 public class EquilibriumIndex {
 

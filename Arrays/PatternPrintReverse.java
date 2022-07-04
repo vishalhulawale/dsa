@@ -65,7 +65,7 @@ Explanation 2:
  Row 1 contains 3 spaces and 1 integer so spaces will be considered as 0 in the output.
 */
 
-package Arrays.PrefixSum;
+package Arrays;
 
 public class PatternPrintReverse {
     public static int[][] solve(int A) {

@@ -51,7 +51,7 @@ The sum of all elements of A[1 ... 1] = 2 = 2.
 The sum of all elements of A[2 ... 3] = 2 + 2 = 4.
 */
 
-package Arrays.PrefixSum;
+package Arrays;
 
 public class RangeSum {
 

@@ -52,7 +52,7 @@ Explanation 2:
  There is no subsequence "AG" in the given string.
 */
 
-package Arrays.PrefixSum;
+package Arrays;
 
 public class SubSequences {
     public static int solve(String A) {

@@ -43,7 +43,7 @@ A[1][2]= 2
 1*1009 + 2 =1011
 */
 
-package Arrays.Matrix;
+package Arrays;
 
 public class FindInSortedMatrix {
     public static int solve(int[][] A, int B) {
