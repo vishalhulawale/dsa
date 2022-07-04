@@ -62,24 +62,29 @@ class ClosestMinMax {
             max = Math.max(max, A[i]);
         }
 
-        int min_index = -1, max_index = -1, res = Integer.MAX_VALUE;
+        // If max and min are same
+        if (max == min) {
+            return 1;
+        }
+
+        int minIndex = -1, maxIndex = -1, ans = Integer.MAX_VALUE;
 
         for (int i = 0; i < A.length; i++) {
             if (A[i] == min) {
-                min_index = i;
+                minIndex = i;
             }
 
             if (A[i] == max) {
-                max_index = i;
+                maxIndex = i;
             }
 
-            if (min_index != -1 && max_index != -1) {
-                int subArrSize = Math.abs(max_index - min_index) + 1;
-                res = Math.min(res, subArrSize);
+            if (minIndex != -1 && maxIndex != -1) {
+                int length = Math.abs(maxIndex - minIndex) + 1;
+                ans = Math.min(ans, length);
             }
         }
 
-        return res;
+        return ans;
     }
 
     public static void main(String[] args) {
