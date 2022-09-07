@@ -82,7 +82,7 @@ class LeastTwoGreaterElements {
 
             int num = A.get(i);
 
-            if (num < largest && num < secondLargest)
+            if (num < secondLargest)
                 result.add(num);
 
         }
